@@ -1,134 +1,112 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>RainbowUI Static</title>
+  <title>雅培</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="css/App.css" rel="stylesheet" type="text/css" />
+  <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="./css/app.css" rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
+  <!-- head -->
+  <div class="head">
+    <div class="headLink">
+      <div>
+        <div>
+          <a href="#">
+            <img src="./images/logo.png" width="40%" />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./images/icon_home.png" width="8%" />
+          </a>
+          <a href="#">
+            <img src="images/icon_user.png" width="10%">
+            <i class="user-content">會員登入/註冊</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <img src="./images/pc_kv.jpg" alt="kv-banner"></img>
+  </div>
+
+  <!-- content -->
+  <div class="content">
+    <!-- 轮播头部 -->
+    <div class="contentNav">
+      <ul class="tab list-inline" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#one" aria-controls="one" role="tab" data-toggle="tab">推薦場次</a>
+        </li>
+        <li role="presentation">
+          <a href="#two" aria-controls="two" role="tab" data-toggle="tab">北部（含宜花)</a>
+        </li>
+        <li role="presentation">
+          <a href="#three" aria-controls="three" role="tab" data-toggle="tab">中部</a>
+        </li>
+        <li role="presentation">
+          <a href="#four" aria-controls="four" role="tab" data-toggle="tab">南部</a>
+        </li>
+      </ul>
+    </div>
+    <!-- 轮播内容 -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="one">
+          <!-- content -->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators lbCarousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
   
-<header class="static_header">
-	<div class="text">
-		<div class="title">RainbowUI Static CLI</div>
-	</div>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                      <img src="./images/banner01.jpg" alt="datuhua1" width="100%">
+                  </div>
+                  <div class="item">
+                      <img src="./images/banner02.png" alt="datuhua1" width="100%">
+                  </div>
+                  <div class="item">
+                      <img src="./images/banner03.png" alt="datuhua1" width="100%">
+                  </div>
+              </div>
+  
+              <!-- Controls -->
+              <a class="left lbCarousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              </a>
+              <a class="right lbCarousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              </a>
+          </div>
 
-</header>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="two">北部（含宜花）</div>
+        <div role="tabpanel" class="tab-pane" id="three">中部</div>
+        <div role="tabpanel" class="tab-pane" id="four">南部</div>
+      </div>
 
-<div class="static_content">
-	<div class="left_content">
-		
+  </div>
 
-		<div class="block">
-			<h1>Common Commands:</h1>
-			<p>
-				$ npm run dev <span class="pl content-left"># this command to start http server for coding html.</span> 
-			</p>
-			<p>
-				$ npm run build <span class="pl content-left"># this command to copy source to release folder.</span> 
-			</p>
-			<p>
-				$ npm run clean <span class="pl content-left"># this command to clean release folder.</span> 
-			</p>
-		</div>
 
-		<div class="block">
-			<h1>Generated File Tree:</h1>
-				<pre style="padding-left:30px"><code>/
-├─ dist					<span class="pl"># directory of source code release .</span>
-│   └─ release				<span class="pl"># environment of source code release .</span>
-│   		├── css   			<span class="pl"># style of release.</span>
-│   		├── images			<span class="pl"># picture of release.</span>
-│   		├── js  			<span class="pl"># javascript of release.</span>
-│	        └── index.html  		<span class="pl"># index.html of release.</span>
-├─ node-modules 				<span class="pl"># third party tools set.</span>
-│   ├─ copyfiles 				<span class="pl"># copy files tools.</span>
-│   ├─ http-server 				<span class="pl"># nodejs http server tools.</span>
-│   └─ rimraf 				<span class="pl"># clean files tools.</span>
-├─ src 					<span class="pl"># source code folder.</span>
-│   ├─ css 					<span class="pl"># style of source.</span>
-│   ├─ images					<span class="pl"># picture of source.</span>
-│   ├─ js 					<span class="pl"># javascript of source.</span>
-│   └─ index.html 				<span class="pl"># index.html of source.</span>
-└─ package.json 				<span class="pl"># describe the project json file.</span>
-</code></pre>
-		</div>
+  <!-- Tab panes -->
+ 
 
-		<div class="block">
-			<h1>Static Resource Service</h1>
-			<h2>To enable you to quickly develop projects, you can visit the link:</h2>
-			<ul>
-				<li><a href="#">Static Service</a></li>
-			</ul>
-		</div>
 
-	</div>
+  <!-- content -->
+  <div>内容2222</div>
 
-	<div class="right_content">
-		<div class="title">Reference Link</div>
-
-		<ul>
-			<li>
-				<span>Knowledge Center</span>
-				<span>PBU Doc Access Instructions.</span>
-			</li>
-
-			<li>
-				<span>Developer Center</span>
-				<span>PBU Developer Guide.</span>
-			</li>
-
-			<li>
-				<span>Training Center</span>
-				<span>PBU Training Vidio.</span>
-			</li>
-
-			<li>
-				<span>Technology Forum</span>
-				<span>PBU BBS.</span>
-			</li>
-
-			<li>
-				<span>Rainbow UI</span>
-				<span>Rainbow UI Website.</span>
-			</li>
-
-			<li>
-				<span>Rainbow Design</span>
-				<span>Rainbow Design Website.</span>
-			</li>
-
-		</ul>
-	</div>		
-
-</div>
-<footer class="static_footer">
-	<div class="static_footer_cell">
-		<div class="cell">
-			<img src="./images/logo.png" width="60%" style="margin-top: -10px">
-		</div>
-		<div class="cell">
-			KNOWLEDGE
-		</div>
-		<div class="cell">
-			TRAINING
-		</div>
-		<div class="cell">
-			TECHNOLOGY
-		</div>
-		<div class="cell">
-			GITBOOK
-		</div>
-		<div class="cell">
-			ABOUT US
-		</div>
-	</div>
-	<div class="static_footer_copyright">
-		Copyright © 2017 eBaoTech Corporation. All rights reserved.
-	</div>
-
-</footer>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
