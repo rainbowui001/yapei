@@ -28,3 +28,22 @@ var checkout = $('#dpd2').fdatepicker({
 }).on('changeDate', function (ev) {
     checkout.hide();
 }).data('datepicker');
+
+var checkin3 = $('#dpd3').fdatepicker({
+    format: 'yyyy-mm-dd',
+    onRender: function (date) {
+        return '';
+    }
+}).on('changeDate', function (ev) {
+    checkin3.hide();
+    $('#dpd4')[0].focus();
+}).data('datepicker');
+
+var checkout4 = $('#dpd4').fdatepicker({
+    format: 'yyyy-mm-dd',
+    onRender: function (date) {
+        return '';
+    }
+}).on('changeDate', function (ev) {
+    checkout4.hide();
+}).data('datepicker');
