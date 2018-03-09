@@ -1,0 +1,298 @@
+html{
+    font-size: 16px;
+}
+body {
+    margin:0;
+    padding: 0;
+    font-family: Microsoft YaHei; 
+    background: url(../images/body_bg.png);
+    background-size: contain;
+    position: relative;
+}
+.row{
+    margin:0;
+    padding: 0;
+}
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,
+.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,
+.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
+    padding:0;
+}
+
+
+/*顶部图片*/
+.head > img{
+    width: 100%;
+}
+.headLink{
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.headLink > div{ 
+    width: 50rem;
+    position: absolute;
+    top: 1rem;
+}
+.headLink > div > a:first-child{
+    float: left;
+}
+.headLink > div > a:nth-child(2),
+.headLink > div > a:nth-child(3){
+    float: right;
+}
+.headLink > div> a > img{
+    height: 2rem;
+}
+.headLink > div> a:last-child > img{
+    margin-right: 2rem;
+}
+.headLink > div > a{
+    text-decoration: none;
+}
+.user-content{
+	font-size: 0.875rem; 
+    color: #009BD9;
+    font-style: normal;
+}
+
+
+/*按钮组*/
+.questionnaire-survey-btn-group{
+    text-align: center;
+}
+.questionnaire-survey-btn-group1{
+    display: inline-block;
+}
+.questionnaire-survey-btn-group button{
+    margin-right: 1.688rem;
+    font-size: 0.875rem;
+}
+.btn-gray,.btn-orange{
+    width: 7.5rem;
+    height: 2.5rem;
+    color: #fff;
+}
+.btn-gray{
+    background-color: #cccccc;
+
+}
+.btn-orange{
+    background-color: #f59400;
+}
+
+
+/*底部版权*/
+.buttom-img{
+    position: absolute;
+    bottom: 9rem;
+    width: 100%;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9rem;
+    background-color: #6d1c7e;
+    display: block;
+    padding-top: 3rem;
+}
+.copyright-text{
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.copyright p{
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #bbb;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+.copyright p:nth-child(2){
+    font-size: 0.75rem;
+}
+.questionnaire-survey-question8{
+    position: relative;
+    z-index: 4;
+}
+.questionnaire-survey-btn-group{
+    position: relative;
+    z-index: 4;
+}
+
+
+
+/*预约成功*/
+.reservation-seccess-container{
+    max-width: 60rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.325rem;
+    padding: 2.625rem 3.25rem 2.25rem 3.25rem;
+    color: #6d1c7e;
+    margin-top: 2rem;
+}
+.reservation-seccess-paragraphy{
+    position: relative;
+    background-color: #fef7fc;
+    border-radius: 0.125rem;
+    padding: 3.25rem 1.125rem 1.5rem 5rem;/*test*/
+    /* width: 50%; */
+}
+.reservation-seccess-paragraphy > div:first-child{
+    width: 55%;
+}
+
+.reservation-seccess-paragraphy > div > p{
+    font-size: 0.875rem;
+}
+.reservation-seccess-paragraphy ~ div {
+    margin: 2rem 5rem 0 5rem;
+}
+.reservation-seccess-paragraphy ~ div:last-child {
+    margin-top: 4.6875rem;
+    margin-bottom: 14.1875rem;
+}
+/*p*/
+.reservation-seccess-paragraphy > div > p:first-of-type{
+    font-size: 1.25rem;
+}
+.reservation-seccess-paragraphy > div > p:nth-of-type(2){
+    text-indent: 2rem;
+    line-height: 1.5rem;
+    color: #222;
+}
+.reservation-seccess-paragraphy > div > img{
+    position: absolute;
+    height: 1.75rem;
+    left: 2rem;
+}
+.reservation-seccess-img > img{
+    position: absolute;
+    top: -1rem;
+    height: 12rem;
+    right: 4rem;
+    right: 0.25rem;
+}
+/*p1*/
+.reservation-seccess-container-p1 > div{
+    padding: 1rem 0;
+
+}
+.reservation-seccess-container-p1 > div > span:first-child{
+    font-size: 1rem;
+}
+.reservation-seccess-container-p1 > div > span:nth-child(2){
+    font-size: 0.875rem;
+    color: #222;
+}
+
+/*p2*/
+.reservation-seccess-container-p2{
+    padding-top: 0.625rem;
+}
+.reservation-seccess-container-p2>div{
+    /* margin: 5rem 0 1.25rem 0; */
+    margin-bottom: 1.5rem;
+    color:#64167d;
+    font-size: 1.25rem;
+}
+.reservation-seccess-container-p2 > p{
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    color: #222;
+}
+.reservation-seccess-container-p2 > p:last-child{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+        @media (min-width: 768px) and (max-width: 991px){ /*平板*/
+            html{
+                font-size: 14px;
+            }
+            .headLink{
+                max-width: 40rem;
+            }
+            .headLink > div{ 
+                width: 40rem;
+            }
+            .headLink > div> a > img{
+                height: 1.438rem;
+            }
+            .headLink > div> a:last-child > img{
+                margin-right: 1.438rem;
+            }
+            .copyright-text{
+                max-width: 50rem;
+            }
+            .reservation-seccess-img > img{
+                top: 2rem;
+                height: 10rem;
+            }
+            .reservation-seccess-container{
+                max-width: 50rem;
+            }
+            .reservation-seccess-container-p1 > div{
+                padding: 0.5rem 0;
+            }
+            
+        }
+
+        @media (max-width: 767px) { 
+            html{
+                font-size: 12px;
+                overflow-x: hidden;
+            }
+            .head > img{
+                width: 150%;
+                position: relative;
+                left: -25%;
+                z-index: -1;
+            }
+            .headLink{
+                max-width: 28rem;
+            }
+            .headLink i{
+                display: none;
+            }
+            .headLink > div{ 
+                width: 28rem;
+                top: 0.625rem;
+            }
+            .headLink > div> a > img{
+                height: 1.5rem;
+            }
+            .reservation-seccess-paragraphy ~ div{
+                margin: 1.5rem 0 0 0;
+            }
+            .btn-gray, .btn-orange{
+                width: 9rem;
+                height: 2rem;
+            }
+            .btn{
+                padding: 0;
+            }
+            .copyright{
+                padding-top: 2rem;
+            }
+            .copyright p{
+                padding-bottom: 0;
+            }
+            .copyright-text{
+                max-width: 30rem;
+            }
+            .reservation-seccess-img > img{
+                top: 4rem;
+                height: 6rem;
+            }
+        }
+        
+
+        

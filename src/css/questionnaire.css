@@ -1,0 +1,518 @@
+html{
+    font-size: 16px;
+}
+body {
+    margin:0;
+    padding: 0;
+    font-family: Microsoft YaHei; 
+    background: url(../images/body_bg.png);
+    background-size: contain;
+    position: relative;
+}
+.row{
+    margin:0;
+    padding: 0;
+}
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,
+.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,
+.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
+    padding:0;
+}
+
+
+/*顶部图片*/
+.head > img{
+    width: 100%;
+}
+.headLink{
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.headLink > div{ 
+    width: 50rem;
+    position: absolute;
+    top: 1rem;
+}
+.headLink > div > a:first-child{
+    float: left;
+}
+.headLink > div > a:nth-child(2),
+.headLink > div > a:nth-child(3){
+    float: right;
+}
+.headLink > div> a > img{
+    height: 2rem;
+}
+.headLink > div> a:last-child > img{
+    margin-right: 2rem;
+}
+.headLink > div > a{
+    text-decoration: none;
+}
+.user-content{
+	font-size: 0.875rem; 
+    color: #009BD9;
+    font-style: normal;
+}
+
+/*问卷调查标题*/
+.questionnaire-survey-head{
+    position: relative;
+    padding: 1.875rem 0 1.25rem 0;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.questionnaire-survey-head p,.questionnaire-survey-head img{
+    display: block;
+    margin:0 auto;
+}
+.questionnaire-survey-head p{
+    position: absolute;
+    text-align: center;
+    left: 1.875rem;
+    right: 0;
+    top: 5rem;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: bolder;
+}
+/*问卷调查正文*/
+.questionnaire-survey label{
+    font-size: 0.875rem;
+}
+/*段落*/
+.questionnaire-survey-container{
+    max-width: 60rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.325rem;
+    padding: 2.625rem 3.25rem 2.25rem 3.25rem;
+    color: #6d1c7e;
+}
+.questionnaire-survey-paragraphy{
+    position: relative;
+    background-color: #fef7fc;
+    border-radius: 0.125rem;
+    padding: 1.25rem 3.125rem 0.9375rem 5rem;
+}
+.questionnaire-survey-paragraphy > p{
+    font-size: 0.875rem;
+}
+.questionnaire-survey-paragraphy > p:first-child{
+    margin-bottom: 0.25rem;
+}
+.questionnaire-survey-paragraphy > p:nth-child(2){
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+.questionnaire-survey-paragraphy > p:nth-child(3){
+    text-align: right;
+}
+
+.questionnaire-survey-paragraphy > img{
+    position: absolute;
+    top: -3.25rem;
+    left: -1.875rem;
+}
+/*问题部分*/
+.questionnaire-survey-paragraphy ~ div{
+    margin: 2.5rem 5rem;
+}
+.questionnaire-survey-paragraphy ~ div:last-child{
+    margin-top: 4.6875rem;
+    margin-bottom: 14.1875rem;
+}
+.question-text{
+    color: #6d1c7e;
+    margin-bottom: 1.25rem;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/*1*/
+/*checkbox*/
+.checkbox-custom {
+    position: relative;
+}
+    /*将初始的checkbox的样式改变*/
+    .checkbox-custom input[type="checkbox"] {
+        opacity: 0;/*将初始的checkbox隐藏起来*/
+        /* position: absolute; */
+        cursor: pointer;
+        z-index: 2;
+        /* margin: -6px 0 0 0; */
+        /* top: 50%; */
+        /* left: 3px; */
+    }
+    /*设计新的checkbox，位置*/
+    .checkbox-custom label:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0.938rem;
+        margin-top: -0.813rem;
+        width: 1.5625rem;
+        height: 1.5625rem;
+        display: inline-block;
+        border-radius: 0.125rem;
+        border: 1px solid #e5e5e5;
+        background: #f9f9f9;
+    }
+    /*点击初始的checkbox，将新的checkbox关联起来*/
+    .checkbox-custom input[type="checkbox"]:checked +label:after {
+        position: absolute;
+        display: inline-block;
+        font-family: 'FontAwesome';
+        content: '\F00C';
+        top: 50%;
+        left: 1.313rem;
+        margin-top: -0.5rem;
+        font-size: 0.938rem;
+        line-height: 1;
+    }
+    .checkbox-custom label {
+        cursor: pointer;
+        font-weight: normal;
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+        text-align: left;
+        color: #000;
+    }
+.checkbox-custom > #cb1_8 ~ p{
+    position: absolute;
+    color: #aaa;
+    left: 6.25rem;
+    top: 1.063rem;
+    font-size: 0.875rem;
+}
+.questionnaire-survey-checkbox-form div:first-child{
+    border-top-left-radius: 0.438rem;
+    border-top-right-radius: 0.438rem;
+}
+.questionnaire-survey-checkbox-form div:last-child{
+    border-bottom: 1px solid #e5e5e5;
+    border-bottom-left-radius: 0.438rem;
+    border-bottom-right-radius: 0.438rem;
+}
+.questionnaire-survey-checkbox-form > div{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    padding: 0.938rem;
+}
+
+/*2*/
+.questionnaire-survey-radio-form{
+    margin-left: 1.25rem;
+}
+.questionnaire-survey-radio-form > .radio{
+    margin-right: 1.125rem;
+}
+.questionnaire-survey-radio-form > .radio > label{
+    color: #000;
+}
+.questionnaire-survey-radio-form > .radio > label > input{
+    margin-right: 0.5rem;
+}
+
+/*4*/
+.checkbox-custom > #cb2_5 ~ p{
+    position: absolute;
+    color: #aaa;
+    left: 6.25rem;
+    top: 1.063rem;
+    font-size: 0.875rem;
+}
+
+/*5*/
+.checkbox-custom > #cb3_14 ~ p{
+    position: absolute;
+    color: #aaa;
+    left: 6.25rem;
+    top: 1.063rem;
+    font-size: 0.875rem;
+}
+
+/*6*/
+.questionnaire-survey-textarea-form textarea{
+    border: 1px solid #e5e5e5;
+    border-radius: 0.438rem;
+    resize:none
+}
+
+/*按钮组*/
+.questionnaire-survey-btn-group{
+    text-align: center;
+}
+.questionnaire-survey-btn-group1{
+    display: inline-block;
+}
+.questionnaire-survey-btn-group button{
+    margin-right: 1.688rem;
+    font-size: 0.875rem;
+}
+.btn-gray,.btn-orange{
+    width: 7.5rem;
+    height: 2.5rem;
+    color: #fff;
+}
+.btn-gray{
+    background-color: #cccccc;
+
+}
+.btn-orange{
+    background-color: #f59400;
+}
+
+
+/*底部版权*/
+.buttom-img{
+    position: absolute;
+    bottom: 9rem;
+    width: 100%;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9rem;
+    background-color: #6d1c7e;
+    display: block;
+    padding-top: 3rem;
+}
+.copyright-text{
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.copyright p{
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #bbb;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+.copyright p:nth-child(2){
+    font-size: 0.75rem;
+}
+.questionnaire-survey-question8{
+    position: relative;
+    z-index: 4;
+}
+.questionnaire-survey-btn-group{
+    position: relative;
+    z-index: 4;
+}
+
+
+/* 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Launch demo modal
+	  </button>
+	  
+	  <!-- Modal -->
+	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div> */
+
+
+/* .modal-header >button{
+
+}
+.modal-header > button > span{
+    content: "";
+    position: relative;
+    top: -50px;
+
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    opacity: 1;
+
+
+}
+.modal-header > button > span::before{
+    content: "";
+    
+    position: relative;
+    top: -50px;
+    height: 12px;
+    width: 3px;
+    color: #fff;
+    border: 2px solid #fff;
+    opacity: 1;
+
+} */
+
+
+        
+
+
+
+        @media (min-width: 768px) and (max-width: 991px){ /*平板*/
+            html{
+                font-size: 14px;
+            }
+            .headLink{
+                max-width: 40rem;
+            }
+            .headLink > div{ 
+                width: 40rem;
+            }
+            .headLink > div> a > img{
+                height: 1.438rem;
+            }
+            .headLink > div> a:last-child > img{
+                margin-right: 1.438rem;
+            }
+            .questionnaire-survey-head{
+                max-width: 40rem;
+            }
+            .questionnaire-survey-head > img{
+                width: 50%;
+            }
+            .questionnaire-survey-head p{
+                top: 3.75rem;
+            }
+            .questionnaire-survey-paragraphy ~ div{
+                margin: 2rem;
+            }
+            .questionnaire-survey-paragraphy{
+                padding: 1.25rem 2rem 0.9375rem 2rem;
+            }
+            .questionnaire-survey-paragraphy > img{
+                position: absolute;
+                top: -2rem;
+                left: -1rem;
+                height: 30%;
+            }
+            .questionnaire-survey-container{
+                max-width: 50rem;
+            }
+            .questionnaire-survey-radio-form{
+                margin-left: 0;
+            }
+            .questionnaire-survey-radio-form > .radio{
+                margin-right: 4rem;
+            }
+            .questionnaire-survey-radio-form > .radio > label > input{
+                margin-right: 0.6rem;
+            }
+            .checkbox-custom > #cb1_8 ~ p,
+            .checkbox-custom > #cb2_5 ~ p,
+            .checkbox-custom > #cb3_14 ~ p{
+                top: 1.2rem;
+            }
+            .copyright-text{
+                max-width: 50rem;
+            }
+            
+        }
+
+        @media (max-width: 767px) { 
+            html{
+                font-size: 12px;
+                overflow-x: hidden;
+            }
+            .head > img{
+                width: 150%;
+                position: relative;
+                left: -25%;
+                z-index: -1;
+            }
+            .headLink{
+                max-width: 28rem;
+            }
+            .headLink i{
+                display: none;
+            }
+            .headLink > div{ 
+                width: 28rem;
+                top: 0.625rem;
+            }
+            .headLink > div> a > img{
+                height: 1.5rem;
+            }
+            .questionnaire-survey-head{
+                max-width: 30rem;
+                padding: 0;
+                padding-bottom: 0.1rem;
+            }
+            .questionnaire-survey-head > img{
+                width: 70%;
+                position: relative;
+                top: 0.3rem;
+            }
+            .questionnaire-survey-head p{
+                top: 2.4rem;
+            }
+            .questionnaire-survey-container{
+                max-width: 30rem;
+                padding: 1.125rem 1.063rem 1.063rem 1.063rem;
+            }
+            .questionnaire-survey-paragraphy{
+                padding: 1.125rem 1.063rem 1.063rem 1.063rem;
+            }
+            .questionnaire-survey-paragraphy > img{
+                position: absolute;
+                top: -1.75rem;
+                left: -0.875rem;
+                height: 22%;
+            }
+            .questionnaire-survey-paragraphy ~ div,{
+                margin: 1.5rem 0;
+            }
+            .reservation-seccess-paragraphy ~ div{
+                margin: 1.5rem 0 0 0;
+            }
+            .questionnaire-survey-paragraphy ~ div:last-child{
+                margin-bottom: 13rem;
+            }
+            .checkbox-custom > #cb1_8 ~ p,
+            .checkbox-custom > #cb2_5 ~ p,
+            .checkbox-custom > #cb3_14 ~ p{
+                top: 1.375rem;
+            }
+            .btn-gray, .btn-orange{
+                width: 9rem;
+                height: 2rem;
+            }
+            .btn{
+                padding: 0;
+            }
+            .copyright{
+                padding-top: 2rem;
+            }
+            .copyright p{
+                padding-bottom: 0;
+            }
+            .copyright-text{
+                max-width: 30rem;
+            }
+
+
+            .reservation-seccess-img > img{
+                top: 4rem;
+                height: 6rem;
+            }
+        }
+        
+
+        
