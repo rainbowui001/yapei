@@ -1,5 +1,73 @@
 
 @media screen and (max-width: 1280px){
+    /*模态框*/
+.modal-dialog{
+    margin-top: 150px;
+    }
+    .modal-header{
+    color: #7A3D8F;
+    background-color: #FDF4FC;
+    text-align: center;
+    border: none;
+    }
+    .modal-header > h4{
+    font-weight: bold;
+    font-size: 18px;
+    }
+    .modal-body{
+    margin: 30px;
+    border: 1px solid #eee;
+    padding: 20px;
+    }
+    .modal-footer{
+    border: 0;
+    text-align: center;
+    }
+    .btn-purpel{
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    background-color: #7A3D8F;
+    border-radius: 5px;
+    font-size: 12px;
+    }
+    .modal-header >button{
+    position: absolute;
+    top: -60px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+    right: 20px;
+    }
+    .modal-header >button > span{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 40px;
+    }
+    .modal-header > button > span::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    position: absolute;
+    border-radius: 20px;
+    right: 0.5px;
+    top: 2px;
+    
+    }
+    .modal-header > button > span::after{
+    content: "";
+    height: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    
+    }
+    .close:focus, .close:hover{
+    color: #fff;
+    }
 
     .indexConditionOneContentData {
         width: 25%;
@@ -282,4 +350,72 @@
         .detailsButton>:nth-child(2){
             background-color:#cdcdcd;
         }
+        /*模态框*/
+.modal-dialog{
+    margin-top: 150px;
+    }
+    .modal-header{
+    color: #7A3D8F;
+    background-color: #FDF4FC;
+    text-align: center;
+    border: none;
+    }
+    .modal-header > h4{
+    font-weight: bold;
+    font-size: 18px;
+    }
+    .modal-body{
+    margin: 30px;
+    border: 1px solid #eee;
+    padding: 20px;
+    }
+    .modal-footer{
+    border: 0;
+    text-align: center;
+    }
+    .btn-purpel{
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    background-color: #7A3D8F;
+    border-radius: 5px;
+    font-size: 12px;
+    }
+    .modal-header >button{
+    position: absolute;
+    top: -60px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+    right: 20px;
+    }
+    .modal-header >button > span{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 40px;
+    }
+    .modal-header > button > span::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    position: absolute;
+    border-radius: 20px;
+    right: 0.5px;
+    top: 2px;
+    
+    }
+    .modal-header > button > span::after{
+    content: "";
+    height: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    
+    }
+    .close:focus, .close:hover{
+    color: #fff;
+    }
  }
