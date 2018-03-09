@@ -1,6 +1,15 @@
 $(function () {
     $(".tab>button").click(function () {
       $(this).siblings().removeClass("active");
+      $(this).eq(index).addClass("active");
+        var index=$(this).index(); 
+        if(0 !=index) {
+            $('.carousel').eq(index).show();
+            $('.carousel').eq(index).siblings().hide();
+        } 
+      
+          //取指定的索引值   
+
     })
 })
 var nowTemp = new Date();
