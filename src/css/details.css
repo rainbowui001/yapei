@@ -116,7 +116,11 @@
         line-height: 35px;
         margin-left: 10px;
         padding: 0 5px;
-
+    }
+    .detialConditionDataInputL>input:focus,
+    .detialConditionDataInputR>input:focus,
+    .detialConditionData>div>input:focus{
+        outline: none;
     }
     .detialConditionDataInputL>span,
     .detialConditionDataInputR>span,
@@ -172,6 +176,9 @@
         height: 35px;
         line-height: 35px;
         margin-left: 10px;
+    }
+    .detialConditionData>div>select:focus{
+        outline: none;
     }
     .detialConditionPhone>div>:nth-child(1){
         width: 40px !important;
@@ -265,6 +272,11 @@
             padding: 0 5px;
 
         }
+        .detialConditionDataInputL>input:focus,
+        .detialConditionDataInputR>input:focus,
+        .detialConditionData>div>input:focus{
+            outline: none;
+        }
         .detialConditionDataInputL>span,
         .detialConditionDataInputR>span,
         .detialConditionData>span
@@ -313,6 +325,9 @@
             height: 35px;
             line-height: 35px;
             margin-left: 10px;
+        }
+        .detialConditionData>div>select:focus{
+            outline: none;
         }
         .detialConditionPhone>div>:nth-child(1){
             width: 40px !important;

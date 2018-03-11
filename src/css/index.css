@@ -1,6 +1,8 @@
 
 /* toubu */
-
+body{
+    outline: none;
+}
 
 @media screen and (max-width: 1025px){
     html {
@@ -12,6 +14,7 @@
         background-size: contain;
         position: relative;
         font-size:1em;
+        outline: none;
     }
     .head>img{
         width: 100%;
@@ -28,6 +31,10 @@
     .headLink>div>:nth-child(1){
         float: left;
         width:25%;
+        margin-left: 14px;
+        position: fixed;
+        top: 5px;
+        z-index: 999;
     }
     .headLink>div>:nth-child(2){
         float: right;
@@ -151,7 +158,11 @@
         border-radius: 3px;
         height: 30px;
         line-height: 30px;
-    
+        padding-left: 6px;
+        color: #8823a0;
+    }
+    .indexDataContentData>div>input:focus{
+        outline: none;
     }
     .indexDataContentWrite>div{
         margin-left: 1.562em;
@@ -167,6 +178,12 @@
         font-size: 0.875em;
         padding: 0 3px;
         color: #eeeeee;
+        padding-left: 6px;
+        margin-left: 6px;
+        COLOR: #8823a0;
+    }
+    .indexDataContentWrite>div>input[placeholder]:focus{
+        outline: none;
     }
     .indexButton>button{
         margin-left: 4px;
@@ -187,12 +204,16 @@
         overflow: hidden;
         border-radius:10px 10px 0 0; 
         padding: 0 20px;
+        border-top-left-radius: 5.2px;
+        border-top-right-radius: 5.2px;
     }
     .indexCondition-contentTwo{
         max-width:64em;
         background-color: #ffffff;
         overflow: hidden;
         padding: 0 20px;
+        border-top-left-radius: 5.2px;
+        border-top-right-radius: 5.2px;
     }
    
 
@@ -394,6 +415,7 @@
         background: url(../images/body_bg.png);
         background-size: contain;
         position: relative;
+        outline: none;
     }
     .head>img{
         width: 100%;
@@ -410,6 +432,9 @@
     }
     .headLink>div>:nth-child(1){
         float: left;
+        position: fixed;
+        top: 5px;
+        z-index: 999;
     }
     .headLink>div>:nth-child(2){
         float: right;
@@ -530,7 +555,11 @@
         border-radius: 3px;
         height: 40px;
         line-height: 40px;
-    
+        padding-left: 6px;
+        color: #8823a0;
+    }
+    .indexDataContentData>div>input:focus{
+        outline: none;
     }
     .indexDataContentWrite>div{
         margin-left: 23px;
@@ -546,6 +575,12 @@
         font-size: 14px;
         padding: 0 6px;
         color: #eeeeee;
+        padding-left: 6px;
+        margin-left: 6px;
+        COLOR: #8823a0;
+    }
+    .indexDataContentWrite>div>input[placeholder]:focus{
+        outline: none;
     }
     .indexButton>button{
         margin-left: 20px;
@@ -568,6 +603,8 @@
         overflow: hidden;
         border-radius:10px 10px 0 0; 
         padding: 0 20px;
+        border-top-left-radius: 5.2px;
+        border-top-right-radius: 5.2px;
     }
     .indexCondition-contentTwo{
         width:1200px;
@@ -575,6 +612,8 @@
         background-color: #ffffff;
         overflow: hidden;
         padding: 0 20px;
+        border-top-left-radius: 5.2px;
+        border-top-right-radius: 5.2px;
     }
     
   
