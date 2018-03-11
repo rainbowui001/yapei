@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1025px){
     .detialsindexCondition{
         margin-top: 10px !important;
     }
@@ -221,7 +221,7 @@
 
 
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1025px){
         /* details */
         .detailsData{
             text-align: center;
