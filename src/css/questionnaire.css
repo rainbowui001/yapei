@@ -38,9 +38,7 @@ body {
 }
 .headLink>div>:nth-child(1){
     float: left;
-    position: fixed;
-    top: 5px;
-    z-index: 999;
+
 }
 .headLink>div>:nth-child(2){
     float: right;
@@ -299,7 +297,7 @@ body {
     background-color: #f59400;
 }
 
-
+ 
 /*底部版权*/
 .buttom-img{
     position: absolute;
@@ -420,9 +418,6 @@ body {
                 float: left;
                 width:25%;
                 margin-left: 14px;
-                position: fixed;
-                top: 5px;
-                z-index: 999;
             }
             .headLink>div>:nth-child(2){
                 float: right;

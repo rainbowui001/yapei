@@ -1,4 +1,6 @@
-
+body{
+    outline: none;
+}
 @media screen and (max-width: 1025px){
     .detialsindexCondition{
         margin-top: 10px !important;
@@ -21,6 +23,10 @@
     margin: 30px;
     border: 1px solid #eee;
     padding: 20px;
+    }
+    .modal-body h5{
+    font-weight: bolder;
+    padding: 5px 0;
     }
     .modal-footer{
     border: 0;
@@ -104,6 +110,10 @@
     .detialConditionDataInputL{
         width:50%;
         float: left;
+    }
+    .detialConditionData:nth-child(2) > div >input{
+        background: url(../images/icon_cal2.png) no-repeat 130px 5px ;
+        background-size: 15%;
     }
     .detialConditionDataInputL>input,
     .detialConditionDataInputR>input,
@@ -386,6 +396,10 @@
     margin: 30px;
     border: 1px solid #eee;
     padding: 20px;
+    }
+    .modal-body h5{
+    font-weight: bolder;
+    padding: 5px 0;
     }
     .modal-footer{
     border: 0;

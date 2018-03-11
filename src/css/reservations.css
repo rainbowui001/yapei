@@ -38,9 +38,7 @@ body {
 }
 .headLink>div>:nth-child(1){
     float: left;
-    position: fixed;
-    top: 5px;
-    z-index: 999;
+
 }
 .headLink>div>:nth-child(2){
     float: right;
@@ -267,9 +265,7 @@ body {
                 float: left;
                 width:25%;
                 margin-left: 14px;
-                position: fixed;
-                top: 5px;
-                z-index: 999;
+
             }
             .headLink>div>:nth-child(2){
                 float: right;
@@ -303,8 +299,8 @@ body {
                 max-width: 50rem;
             } */
             .reservation-seccess-img > img{
-                top: 2rem;
-                height: 10rem;
+                top: -1rem;
+                height: 13rem;
             }
             .reservation-seccess-container{
                 max-width: 1200px;

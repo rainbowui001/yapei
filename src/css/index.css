@@ -1,8 +1,12 @@
 
-/* toubu */
 body{
     outline: none;
 }
+/* .headLink>div>div{
+    position: fixed;
+    top: 5px;
+    z-index: 999;
+} */
 
 @media screen and (max-width: 1025px){
     html {
@@ -32,9 +36,7 @@ body{
         float: left;
         width:25%;
         margin-left: 14px;
-        position: fixed;
-        top: 5px;
-        z-index: 999;
+
     }
     .headLink>div>:nth-child(2){
         float: right;
@@ -160,6 +162,8 @@ body{
         line-height: 30px;
         padding-left: 6px;
         color: #8823a0;
+        background: url(../images/icon_cal1.png) no-repeat 130px 8px ;
+        background-size: 15%;
     }
     .indexDataContentData>div>input:focus{
         outline: none;
@@ -212,14 +216,18 @@ body{
         background-color: #ffffff;
         overflow: hidden;
         padding: 0 20px;
+        
+    }
+    .indexCondition > .indexCondition-contentTwo:first-of-type{
         border-top-left-radius: 5.2px;
         border-top-right-radius: 5.2px;
     }
-   
 
     .indexCondition{
         margin: 40px auto 0 auto;
         max-width:64em;
+        border-top-left-radius: 5.2px;
+        border-top-right-radius: 5.2px;
     }
     .indexConditionOneContentTwo{
         margin: 0px auto 0 auto;
@@ -369,13 +377,42 @@ body{
     }
     
     /*底部版权*/
-   
     .buttom-img{
+        position: absolute;
+        bottom: 144px;
+        width: 100%;
+    }
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 144px;
+        background-color: #6d1c7e;
+        display: block;
+        padding-top: 48px;
+    }
+    .copyright-text{
+        position: relative;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .copyright p{
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #bbb;
+        padding-bottom: 12px;
+        text-transform: uppercase;
+    }
+    .copyright p:nth-child(2){
+        font-size: 12px;
+    }
+    /*.buttom-img{
         position: absolute;
         bottom: 157px;
         width: 100%;
         }
-    .copyright{
+       .copyright{
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -392,7 +429,7 @@ body{
         color: #bbb;
         padding-bottom: 15px;
         text-transform: uppercase;
-        }
+        } */
     .questionnaire-survey-question8{
         position: relative;
         z-index: 4;
@@ -432,9 +469,7 @@ body{
     }
     .headLink>div>:nth-child(1){
         float: left;
-        position: fixed;
-        top: 5px;
-        z-index: 999;
+
     }
     .headLink>div>:nth-child(2){
         float: right;
@@ -557,6 +592,9 @@ body{
         line-height: 40px;
         padding-left: 6px;
         color: #8823a0;
+        
+        background: url(../images/icon_cal1.png) no-repeat 130px 8px ;
+        background-size: 15%;
     }
     .indexDataContentData>div>input:focus{
         outline: none;
@@ -612,14 +650,18 @@ body{
         background-color: #ffffff;
         overflow: hidden;
         padding: 0 20px;
+        
+    }
+    .indexCondition > .indexCondition-contentTwo:first-of-type{
         border-top-left-radius: 5.2px;
         border-top-right-radius: 5.2px;
     }
-    
   
     .indexCondition{
         margin: 50px auto 0 auto;
         width: 1200px;
+        border-top-left-radius: 5.2px;
+        border-top-right-radius: 5.2px;
     }
     .indexConditionOneContentTwo{
         margin: 0px auto 0 auto;
@@ -770,6 +812,36 @@ body{
     /*底部版权*/
     .buttom-img{
         position: absolute;
+        bottom: 144px;
+        width: 100%;
+    }
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 144px;
+        background-color: #6d1c7e;
+        display: block;
+        padding-top: 48px;
+    }
+    .copyright-text{
+        position: relative;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .copyright p{
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #bbb;
+        padding-bottom: 12px;
+        text-transform: uppercase;
+    }
+    .copyright p:nth-child(2){
+        font-size: 12px;
+    }
+    /* .buttom-img{
+        position: absolute;
         bottom: 157px;
         width: 100%;
         }
@@ -794,7 +866,7 @@ body{
         color: #bbb;
         padding-bottom: 15px;
         text-transform: uppercase;
-        }
+        } */
         .questionnaire-survey-question8{
         position: relative;
         z-index: 4;
