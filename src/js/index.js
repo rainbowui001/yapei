@@ -1,15 +1,11 @@
 $(function () {
     $(".tab>button").click(function () {
-      $(this).siblings().removeClass("active");
-      $(this).eq(index).addClass("active");
-        var index=$(this).index(); 
-        if(0 !=index) {
-            $('.carousel').eq(index).show();
-            $('.carousel').eq(index).siblings().hide();
-        } 
-      
-          //取指定的索引值   
-
+        $(this).siblings().removeClass("showButton");
+        $(this).addClass("showButton");
+        var index = $(this).index();
+        var content =$(this).parents(".contentNav").siblings(".tab-content").find(".carousel").eq(index);
+        content.show();
+        content.siblings().hide();
     })
 })
 var nowTemp = new Date();

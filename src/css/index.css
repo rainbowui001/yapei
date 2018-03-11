@@ -1,387 +1,8 @@
 
 /* toubu */
 
-@media screen and (max-width: 768px){
-    html {
-        font-size: 100%;
-   }
-    body{
-        font-family: Microsoft YaHei;
-        background: url(../images/body_bg.png);
-        background-size: contain;
-        position: relative;
-        font-size:1em;
-    }
-    .head>img{
-        width: 100%;
-    }
-    .headLink{
-        position: relative;
-        width:100%;
-    }
-    .headLink>div{ 
-        width :100%;    
-        position: absolute;
-        top:5px;
-    }
-    .headLink>div>:nth-child(1){
-        float: left;
-        width:20%;
-    }
-    .headLink>div>:nth-child(2){
-        float: right;
-        width:150px;
-        text-align: end;
-    }
-    .headLink>div>:nth-child(2)>:nth-child(1){
-        margin-right: 14px;
-    }
-    .headLink>div>:nth-child(2)>:nth-child(2){
-        margin-right:14px;
-        text-decoration: none;
-    }
-    .user-content{
-        font-size: 0.55em; 
-        color: #009BD9;
-    }
-    
-    /* content */
-    .contentNav{
-        width:100%;
-        background:url(../images/menu_bar.jpg) repeat-x;
-    }
-    .contentNav>.tab{
-        max-width:64em;
-        margin: 0 auto;
-        height: 60px;
-        overflow: hidden;
-    }
-    
-    .tab>button{
-        position: relative;
-        float: left;
-        height: 60px;
-        line-height:60px; 
-        width:25%;
-        text-align: center;
-        color: #fff;
-        text-decoration: none;
-        font-size: 0.9em;
-        background-color: #8823a0;
-        border: 0px;
-    }
-    .tab>button:focus{
-        outline: -webkit-focus-ring-color auto 0px;
-        color: #fff;
-        width:25%;
-        text-align: center;
-        height: 60px;
-        line-height:60px; 
-        background-color: #a347af;
-        border: 0;
-    }
-    
-    .tab>.active {
-        color: #fff;
-        width:25%;
-        text-align: center;
-        height: 60px;
-        line-height:60px; 
-        background-color: #a347af;
-        border: 0;
-    } 
-    .tab-content{
-        max-width:75em;
-        margin: 0 auto;
-    }
-   
-    .carousel-indicators{
-        position: absolute;
-        bottom:0px;
-    }
-    .carousel-indicators>li{
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background-color: #cdcdcd;
-        border: 0px;
-    }
-    .carousel-indicators .active{
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background-color: #8823a0;
-        border: 0px;  
-        margin-bottom: 1.5px; 
-    }
-    
-    /* data */
-    .indexData{
-        overflow: hidden;
-        background-color: #fff;
-    }
-    .indexData>:nth-child(1){
-        float: left;
-        width:25%; 
-        position: relative;
-        right: 0;
-    }
-    .indexData>:nth-child(1)>img{
-        float: right;
 
-    }
-    .indexData>:nth-child(2){
-        float: left;
-        width:73%; 
-    }
-    
-    .indexDataContent{
-        margin: 1em .425px;
-    }
-    
-    .indexDataContentData{
-        margin-bottom: 1.25em;
-    }
-    .indexDataContentData>span,
-    .indexDataContentWrite>span
-    {
-        font-size: 0.475em;
-    }
-    .indexDataContentData>div, 
-    .indexDataContentWrite>div{
-       display: inline-block;
-       font-size: 0.475em;
-    }
-    .indexDataContentData>div>input{
-        width:7em;
-        border: 1px solid #eeeeee;
-        border-radius: 3px;
-        height: 30px;
-        line-height: 30px;
-    
-    }
-    .indexDataContentWrite>div{
-        margin-left: 1.562em;
-    }
-    .indexDataContentWrite>div>input{
-        width:16.3em;
-        border: 1px solid #eeeeee;
-        border-radius: 3px;
-        height: 25px;
-        line-height: 25px;
-    }
-    .indexDataContentWrite>div>input[placeholder]{
-        font-size: 0.875em;
-        padding: 0 3px;
-        color: #eeeeee;
-    }
-    .indexButton>button{
-        margin-left: 4px;
-        font-size: 1.125em;
-        background-color:#f49300;
-        color: #fff;
-        height: 30px;
-        line-height: 30px;
-        width:6.875em;
-        border: none;
-        border-radius: 5px;
-    }
-    
-    /* Condition */
-    .indexCondition{
-       margin-top: 1.25em;
-       padding: 0px 0.9375px;
-       overflow: hidden;
-       background-color: #fff;
-       border-radius:10px 10px 0 0; 
-    
-    }
-    
-    .indexConditionOneContent{
-        overflow: hidden;
-        border-bottom: 1px solid #edebf9;
-      
-    }
-    .indexConditionOneContent>:nth-child(1){
-       float:left;
-       width:80%;
-    }
-    .indexConditionOneContent>:nth-child(2){
-      float:right;
-      width:19%;
-    }
-    .indexConditionOneContent>:nth-child(1)>div{
-      float:left;
-    }
-    .indexConditionOneImg{
-        position: relative;
-    }
-    .indexConditionOneImg>img{
-        position: absolute;
-        left:-1.1875em;
-        top:-6px;
-        width:18%;
-    }
-    .indexConditionOneContentData{
-        width: 25%;
-        padding:2em .5em 0px .7em;
-    }
-    .indexConditionOneContentData>:nth-child(1){
-        overflow: hidden;
-    }
-    .indexConditionOneContentData>:nth-child(1)>span,
-    .indexConditionOneContentData>:nth-child(2)>span
-    {
-        display: inline-block;
-    }
-    .indexConditionOneContentData>:nth-child(1)>:nth-child(1){
-       font-size:0.7em;
-       float:left;
-       color: #666666;
-    }
-    .indexConditionOneContentData>:nth-child(1)>:nth-child(2){ 
-        margin-top: 2px;
-        padding: 0 2px;
-        float:left;
-        font-size: 0.475em;
-        color:#808080;
-    }
-    .indexConditionOneContentData>:nth-child(2){
-        margin-left: .45em;
-    }
-    .indexConditionOneContentData>:nth-child(2)>:nth-child(1){
-        font-size: 0.8em;
-        color:#808080;
-    }
-    .indexConditionOneContentData>:nth-child(2)>:nth-child(2){
-        padding: 0 3px;
-        font-size: 0.8125em;
-    }
-    .indexConditionOneContentData>:nth-child(3){
-      text-align: center;
-       width: 6.75em;
-       height:1.6875em;
-       line-height: 1.6875em;
-       background: #cdcdcd;
-       font-size: .3em;
-       overflow: hidden;
-       text-overflow:ellipsis;
-       white-space: nowrap;
-    }
-    
-    .indexConditionOneContentMessage{
-        width: 73%;
-        margin-top: 1.5em;
-        margin-bottom: 0.9em;
-        margin-left: 5px;
-    }
-    .indexConditionOneContentMessage>div{
-        height: 1.575em;
-        line-height: 1.575em;
-        overflow: hidden;
-        text-overflow:ellipsis;
-        white-space: nowrap;
-        font-size:0.7em;
-    }
-    .indexConditionOneContentMessage>div>span{
-       font-size:0.7em;
-     }
-    .indexConditionOneContentMessage>div>img{
-        width: 3%;
-    }
-    .indexConditionOneContentMessage>:nth-child(1)>span{
-       color:#8823a0;
-    }
-    .indexConditionOneContentMessage>:last-child(1){
-        position: relative;
-    }
-    .article-time-line{
-       border-bottom: 1px solid #fff;
-       width: 2.812em;
-       height: 1.237em;
-       display: inline-block;
-       position: absolute;
-    
-    }
-    .article-time{
-        display: inline-block;
-        text-align: center;
-        width: 1.313em;
-        height:1.5em;
-        line-height:1.5em;
-        color: #fff;
-        font-size: 0.7em;
-        border-radius:0.25em;
-        background-color: #64167c;
-    }
-   
-    .indexButtonSubmit>button{
-        font-size: 0.6em;
-        background-color:#f49300;
-        color: #fff;
-        height: 30px;
-        line-height: 30px;
-        width:65px;
-        border: none;
-        border-radius: 5px;
-        margin-top: 50%;
-    }
-    .attention{
-        margin-bottom: 12em;
-    }
-    .attention>div{
-        margin: 1em 0 0.7em 0;
-        color:#64167d;
-        font-size: 1em;
-    }
-    .attention>p{
-        margin: 0 0 0.5em;
-        font-size: 0.675em;
-    }
-    .attention>:nth-last-child(1){
-        margin-top: 1.875em;
-    }
-    
-    /*底部版权*/
-    .foot{
-        width:65em;
-    }
-    .buttom-img{
-        position: absolute;
-        bottom: 157px;
-        width: 100%;
-        }
-    .copyright{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 157px;
-        background-color: #6d1c7e;
-        display: block;
-        padding-top: 50px;
-        }
-    .copyright p{
-        margin: 0 auto;
-        display: block;
-        width:150px ;
-        font-size: 0.875em;
-        color: #bbb;
-        padding-bottom: 15px;
-        text-transform: uppercase;
-        }
-    .questionnaire-survey-question8{
-        position: relative;
-        z-index: 4;
-        }
-    .questionnaire-survey-btn-group{
-        position: relative;
-        z-index: 4;
-    }
-
-    
-}
-
-@media screen and (min-width: 768px) and (max-width: 1280px){
+@media screen and (max-width: 1280px){
     html {
         font-size: 100%;
    }
@@ -433,45 +54,38 @@
     .contentNav>.tab{
         max-width:64em;
         margin: 0 auto;
-        height: 70px;
         overflow: hidden;
     }
-    
-    .tab>button{
+
+    .tabButton{
+        background-color:transparent;
         position: relative;
         float: left;
-        height: 70px;
-        line-height:70px; 
-        width:25%;
+        height: 84px;
+        width: 25%;
         text-align: center;
         color: #fff;
         text-decoration: none;
-        font-size: 1.375em;
-        background-color: #8823a0;
+        font-size: 22px;
         border: 0px;
+        border-radius: 10px 10px 0 0;
     }
-    .tab>button:focus{
+   
+    
+    .showButton{
         outline: -webkit-focus-ring-color auto 0px;
         color: #fff;
         width:25%;
         text-align: center;
-        height: 70px;
-        line-height:70px; 
+        height: 84px;
         background-color: #a347af;
         border: 0;
-    }
-    
-    .tab>.active {
-        color: #fff;
-        width:25%;
-        text-align: center;
-        height: 70px;
-        line-height:70px; 
-        background-color: #a347af;
-        border: 0;
+        border-radius: 10px 10px 0 0;
+
     } 
+  
     .tab-content{
-        max-width:75em;
+        max-width:64em;
         margin: 0 auto;
     }
    
@@ -567,12 +181,21 @@
     }
     
     /* Condition */
+    .indexCondition-content{
+        max-width:64em;
+        background-color: #ffffff;
+        overflow: hidden;
+        border-radius:10px 10px 0 0; 
+        padding: 0 20px;
+    }
+    .indexCondition-contentTwo{
+        max-width:64em;
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 0 20px;
+    }
     .indexCondition{
-       margin-top: 1.25em;
-       padding: 0px 0.9375px;
-       overflow: hidden;
-       background-color: #fff;
-       border-radius:10px 10px 0 0; 
+        margin-top: 40px;
     
     }
     
@@ -584,6 +207,7 @@
     .indexConditionOneContent>:nth-child(1){
        float:left;
        width:80%;
+       height: 215px;
     }
     .indexConditionOneContent>:nth-child(2){
       float:right;
@@ -597,9 +221,8 @@
     }
     .indexConditionOneImg>img{
         position: absolute;
-        left:-1.1875em;
-        top:-6px;
         width:13%;
+        top:-8px;
     }
     .indexConditionOneContentData{
         width: 25%;
@@ -691,7 +314,7 @@
     }
    
     .indexButtonSubmit>button{
-        font-size: 1.125em;
+        font-size: 1em;
         background-color:#f49300;
         color: #fff;
         height: 2.2em;
@@ -703,7 +326,7 @@
     }
     .attention{
         padding-top: 0.625em;
-        margin-bottom: 15em;
+        padding-bottom: 250px;
     }
     .attention>div{
         margin: 2.5em 0 1.25em 0;
@@ -719,9 +342,7 @@
     }
     
     /*底部版权*/
-    .foot{
-        width:65em;
-    }
+   
     .buttom-img{
         position: absolute;
         bottom: 157px;
@@ -752,6 +373,12 @@
     .questionnaire-survey-btn-group{
         position: relative;
         z-index: 4;
+    }
+    #one{
+        display: block;
+    }
+    .carousel{
+        display: none;
     }
 }
 
@@ -805,7 +432,8 @@
         overflow: hidden;
     }
     
-    .tab>button{
+    .tabButton{
+        background-color:transparent;
         position: relative;
         float: left;
         height: 84px;
@@ -814,19 +442,12 @@
         color: #fff;
         text-decoration: none;
         font-size: 22px;
-        background-color: #8823a0;
         border: 0px;
-    }
-    .tab>button:focus{
-        outline: -webkit-focus-ring-color auto 0px;
-        color: #fff;
-        padding: 30px 42px;
-        height: 85px;
-        background-color: #a347af;
-        border: 0;
+        border-radius: 10px 10px 0 0;
     }
     
-    .tab>.active {
+    .showButton{
+        outline: -webkit-focus-ring-color auto 0px;
         color: #fff;
         padding: 30px 42px;
         height: 85px;
@@ -931,15 +552,28 @@
         border: none;
         border-radius: 5px;
     }
+
+
+     /* Condition */
+    .indexCondition-content{
+        width:1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        overflow: hidden;
+        border-radius:10px 10px 0 0; 
+        padding: 0 20px;
+    }
+    .indexCondition-contentTwo{
+        width:1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 0 20px;
+    }
     
-    /* Condition */
+  
     .indexCondition{
-       margin-top: 20px;
-       padding: 0px 15px;
-       overflow: hidden;
-       background-color: #fff;
-       border-radius:10px 10px 0 0; 
-    
+        margin-top: 50px;
     }
     
     .indexConditionOneContent{
@@ -947,6 +581,7 @@
         border-bottom: 1px solid #edebf9;
         height: 215px;
     }
+    
     .indexConditionOneContent>:nth-child(1){
        float:left;
        width:80%;
@@ -963,9 +598,9 @@
     }
     .indexConditionOneImg>img{
         position: absolute;
-        left:-19px;
-        width:10%;
-        top:-6px;
+        left:7.8%;
+        width:8%;
+        top:-7px;
     
     }
     .indexConditionOneContentData{
@@ -1064,9 +699,11 @@
         border-radius: 5px;
         margin-top: 50%;
     }
+   
     .attention{
         padding-top: 10px;
-        margin-bottom: 300px;
+        padding-bottom: 300px;
+
     }
     .attention>div{
         margin: 40px 0 20px 0;

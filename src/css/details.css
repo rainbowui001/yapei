@@ -1,5 +1,8 @@
 
 @media screen and (max-width: 1280px){
+    .detialsindexCondition{
+        margin-top: 10px !important;
+    }
     /*模态框*/
 .modal-dialog{
     margin-top: 150px;
@@ -417,5 +420,8 @@
     }
     .close:focus, .close:hover{
     color: #fff;
+    }
+    .detialsindexCondition{
+        margin-top: 10px !important;
     }
  }
