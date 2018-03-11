@@ -33,7 +33,7 @@ body {
 }
 .headLink>div{ 
     width:1200px;
-    position: absolute;
+    position: fixed;
     top:5px;
 }
 .headLink>div>:nth-child(1){
@@ -258,7 +258,7 @@ body {
             }
             .headLink>div{ 
                 width :100%;    
-                position: absolute;
+                position: fixed;
                 top:5px;
             }
             .headLink>div>:nth-child(1){
