@@ -1,0 +1,473 @@
+body{
+    font-family: Microsoft YaHei;
+    background: url(../images/body_bg.png);
+    position: relative;
+    font-size:1em;
+}
+*{
+    outline: none;
+}
+/* toubu */
+.head{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color:#fff;
+}
+.head>div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.headImg{
+    top:-2px;
+    margin-right: 13px;
+}
+.user-content{
+    color: #009BD9;
+}
+/* content */
+
+.content{
+    width: 80%;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 100px;
+}
+.contentHead{
+    padding: 50px 0 0 0;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    border-bottom: 3px solid #eee;
+
+}
+.contentHead>div{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.contentHead>div>div{
+    width: 120px;
+    text-align: center;
+}
+.wizard{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    line-height: 20px;
+    color:#fff;
+    background-color: #cdcdcd;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+}
+.headFont{
+    color:#cdcdcd;
+}
+.step{
+    border-bottom:3px  solid  #64167d;
+    padding-bottom: 15px;
+}
+.step>.wizard{
+    background-color:#64167d;
+}
+.step>.headFont{
+    color:#64167d;
+}
+.contentGreat{
+    display: flex;
+}
+.contentGreat{
+    width: 85%;
+    margin: 20px auto 0 auto;
+    background-color:#fff; 
+}
+.contentGreat>:nth-child(1){
+    position: relative;
+}
+.contentGreat>:nth-child(1)>img{
+    width: 90px;
+    position: absolute;
+    left: -70px;
+}
+.loginFont{
+    width: 100%;
+    background-color: #fef7fc;
+    border-radius: 4px 4px 0 0;
+    font-size:12px;
+    padding: 15px 15px;
+}
+.loginFontContent{
+    text-indent:2em;
+     margin: 0px;
+     color: #6d1c7e;
+}
+.loginFont>:nth-child(4),
+.loginFont>:nth-child(1),
+.loginFont>:nth-child(5){
+    margin: 0px;
+     color: #6d1c7e;
+}
+.loginFont>:nth-child(6){
+    margin: 5px 0px 0px 0px ;
+    color: #6d1c7e;
+    text-align: right;
+}
+.contentForm{
+    width: 85%;
+    margin: 20px auto;
+    border:2px solid  #eee;
+    border-radius: 5px;
+}
+.detailsItem{
+    padding: 20px 30px;
+    font-size: 13px;
+    display: flex;
+}
+.dataFont{
+    color: #6d1c7e;
+}
+.detailsItem>:nth-child(1){
+    margin-right: 5px;
+}
+/* modal */
+.modal-dialog{
+    margin-top: 150px;
+    }
+    .modal-header{
+    color: #7A3D8F;
+    background-color: #FDF4FC;
+    text-align: center;
+    border: none;
+    }
+    .modal-header > h4{
+    font-weight: bold;
+    font-size: 18px;
+    }
+    .modal-body{
+    margin: 30px;
+    border: 1px solid #eee;
+    padding: 20px;
+    }
+    .modal-body h5{
+    font-weight: bolder;
+    padding: 5px 0;
+    }
+    .modal-footer{
+    border: 0;
+    text-align: center;
+    }
+    .btn-purpel{
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    background-color: #7A3D8F;
+    border-radius: 5px;
+    font-size: 12px;
+    }
+    .modal-header >button{
+    position: absolute;
+    top: -60px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+    right: 20px;
+    }
+    .modal-header >button > span{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 40px;
+    }
+    .modal-header > button > span::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    position: absolute;
+    border-radius: 20px;
+    right: 0.5px;
+    top: 2px;
+    
+    }
+    .modal-header > button > span::after{
+    content: "";
+    height: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    
+    }
+    .close:focus, .close:hover{
+    color: #fff;
+    }
+    .detialsindexCondition{
+        margin-top: 10px !important;
+    }
+ 
+/* form */
+   .formcontent{
+       width: 95%;
+       margin: 20px auto;
+   }
+   .formcontent>div{
+       display: flex;
+       justify-content: space-between;
+   }
+.detialConditionDataInput>div{
+    display: inline-block;
+    position: relative;
+    width: 65%;
+}
+.detialConditionDataInput>div>input{
+    padding: 0 5px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    color:#333;
+}
+.detialConditionDataInput>div>span{
+    color:#cdcdcd; 
+    position: absolute;
+    font-size: 10px;
+    top:5px;
+    margin-right: 10px;
+}
+.detialConditionDataInput>div>div{
+    display: inline-block;
+}
+.detialConditionDataInput,
+.detialConditionDataInputHP
+{
+    height: 30px;
+    line-height: 30px;
+    font-size:1.3em; 
+    width:49%;
+    padding:10px;
+    margin-bottom: 25px;
+}
+.detialConditionDataInput>span,
+.detialConditionDataInputHP>:nth-child(1)
+{
+    display: inline-block;
+    width: 90px;
+    text-align: end;
+    margin-right: 10px;
+}
+.detialConditionDataInput>input,
+.detialConditionDataInput>select
+{
+  width: 65%;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px; 
+  padding: 0 5px;    
+  color:#333; 
+}
+.detialConditionDataInput>input[placeholder],
+.detialConditionDataInputHP>:nth-child(2)>div>input[placeholder],
+.detialConditionDataInput>div>input[placeholder],
+.phone1[placeholder]
+{
+   color: #999;
+   font-size: 12px;
+   border-radius: 5px;
+}
+.detialConditionDataInputHP>span{
+  display:inline-block;
+}
+.detialConditionDataInputHP>:nth-child(2){
+  width: 65%;
+  height: 30px;
+  color:#999; 
+}
+.detialConditionDataInputHP>:nth-child(2)>div{
+  display: inline-block;
+  position: relative;
+}
+.detialConditionDataInputHP>:nth-child(2)>:nth-child(1){
+  width: 55%;
+  margin-right: 2px;
+}
+.detialConditionDataInputHP>:nth-child(2)>:nth-child(2){
+  width: 42%;
+}
+.detialConditionDataInputHP>:nth-child(2)>div>input{
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px; 
+  padding: 0 5px ;
+  color:#999; 
+  width: 100%;
+}
+.detialConditionDataInputHP>:nth-child(2)>div>span{
+  position: absolute;
+  right:2px;
+  font-size: 10px;
+  top:9px;
+}
+.color{
+    color: red;
+}
+.informationConditionDataInput>div>input{
+    width: auto;
+    vertical-align: bottom;
+}
+.informationConditionDataInput{
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+.check>input{
+    font-size: 12px!important;
+    width: 10px !important;
+    margin-right: 5px;
+}
+.numberLogin{
+    font-size: 10px !important;
+    color:red !important;
+}
+.detialConditionDataInput{
+    position: relative;
+}
+.check{
+    width: 100% !important;
+    position: absolute;
+    left:100px;
+}
+.informationPCNub{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.other{
+    display: flex;
+    width: 95%;
+    margin:0 auto ;
+    font-size:1.3em; 
+    margin-bottom: 25px;
+    height: 30px;
+    line-height: 30px;
+}
+.other>:nth-child(1){
+    display: inline-block;
+    width: 90px;
+    text-align: end;
+    margin-right: 10px;
+}
+.other>:nth-child(2){
+    width: 90%;
+    text-align: left;
+}
+.phoneLogin>input{
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px; 
+    padding: 0 5px;    
+    color:#333; 
+}
+.phoneLogin1{
+     width: 10%;
+}
+.phoneLogin2{
+    width: 25%;
+}
+.phoneLogin1{
+    width: 20%;
+}
+.addressContent{
+    width: 100%;
+}
+.address
+{
+    width: 65% !important;
+    position: relative;
+}
+.detailsAddress{
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px; 
+    padding: 0 5px;    
+    color:#333; 
+     min-width: 100px;
+}
+#triggerDZ1,#triggerDZ2{
+    width: 25%;
+}
+.button{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+ 
+}
+.button>button{
+    color: #fff;
+    background-color: #ffd9a0;
+    border: none;
+    width:100px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+.button>button:focus{
+    background-color: #f59300;
+}
+
+/* dibu */
+.foot
+{
+    position: relative;
+}
+.foot>img{
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+.copyright{
+    width: 100%;
+    height: 100px;
+    background-color: #6d1c7e;
+}
+.copyright-text{
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    .copyright a{
+    color: #fff!important;
+    text-decoration: none;
+    }
+    .copyright p{
+    display: block;
+    text-align: center;
+    color: #fff;
+    opacity: 0.9;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 75%;
+    transform: scale(0.9);
+    }
+    
+    .copyright-text > img{
+    position: absolute;
+    right: 62.5%;
+    bottom: -12.5%;
+    width: 10%;
+    
+    }

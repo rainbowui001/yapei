@@ -1,0 +1,83 @@
+/*消除两个控件的影响*/
+.table-condensed .select{
+    display: table-cell;
+}
+
+/*index details客户化*/
+button.addOn{
+    height: 30px;
+}
+.detialConditionDataInputHP>:nth-child(2)>:nth-child(1){
+    width: 100%;
+}
+/*01-09为单个不是一对*/
+#trigger1,#trigger3,#trigger5,#trigger7,#trigger9,#trigger11{
+    width: 49%;
+    margin-right: 0;
+    vertical-align: bottom;
+    height: 30px;
+    line-height: 30px;
+}
+.select,#triggerXL,#trigger20,#trigger21,#trigger22,#trigger23,#trigger10,#trigger11,#trigger18{
+    width: 65%;
+    margin-right: 0;
+    vertical-align: bottom;
+    height: 30px;
+    line-height: 30px;
+}
+.select::before,#trigger2::before,#trigger4::before,#trigger6::before,#trigger8::before,#trigger12::before,
+#trigger16::before,#trigger3::before,#trigger5::before,#trigger7::before,
+#trigger9::before,#trigger13::before,#trigger17::before,#trigger1::before,
+#trigger20::before,#trigger21::before,#trigger22::before,#trigger23::before,
+#trigger10::before,#trigger11::before,#trigger18::before{
+    content: "\e114";
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    color: #c9c9c9;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    
+}
+#trigger2,#trigger4,#trigger6,#trigger8,#trigger10,#trigger12{
+    width: 48%;
+    vertical-align: bottom;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*日期控件*/
+/**/
+.iDate.date {
+    height: 30px;
+    width: 65%;
+  }
+  .iDate>button{
+    border: 1px solid #c9c9c9;
+  }
+  .iDate>input{
+    border:0 !important;
+  }
+  .iDate>input[placeholder]{
+      color:#999;
+  }
+/*一行两个m_datetime*/
+.m_datetime{
+    width: 33.7%!important;
+}
+.m_datetime > button{
+    border-color: #c9c9c9;
+}
+
+.dtPicker .select{
+    width: auto;
+}
+/*下拉控件*/
+/* .m_select{
+    padding: 0 5px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 30px!important;
+} */
+    
+         
