@@ -10,6 +10,9 @@ body {
     position: relative;
     outline: none;
 }
+*{
+    outline: none;
+}
 .row{
     margin:0;
     padding: 0;
@@ -20,7 +23,17 @@ body {
 .col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
     padding:0;
 }
+a:link,a:visited,a:hover,a:visited{
+    text-decoration: none;
+}
+input::-ms-input-placeholder{color: #999;}
+input::-webkit-input-placeholder{color: #999;}
+input{color: #333;}
 
+.form-control:focus{
+    border-color: #c9c9c9;
+    box-shadow: none;
+}
 
 /*顶部图片*/
 
@@ -53,7 +66,7 @@ body {
     color: #009BD9;
 }
 
-/*段落*/
+/*内容，布局*/
 .log-in-container{
     max-width: 1200px;
     width: 100%;
@@ -63,6 +76,7 @@ body {
     padding: 0 0 2.25rem 3.25rem;
     color: #6d1c7e;
     overflow: hidden;
+    padding-bottom: 23.75rem;
 }
 
 .log-in-container-left,
@@ -70,42 +84,125 @@ body {
     float: left;
 }
 .log-in-container-left{
-    width: 40%;
+    width: 32%;
     margin-top: 5rem;
+    margin-left: 2%;
+    margin-right: 1%;
+
 }
 .log-in-container-right{
-    width: 60%;
+    width: 65%;
 }
 .log-in-container-right > img{
     float: right;
-    width: 90%;
+    width: 93%;
 }
 
 
 
-
+/* 左上*/
 .log-in-paragraphy{
     position: relative;
     background-color: #fef7fc;
-    border-radius: 0.125rem;
-    padding: 1.25rem 3.125rem 0.9375rem 5rem;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.5rem 1.25rem 2.75rem;
 }
 .log-in-paragraphy > p{
     font-size: 0.875rem;
-}
-.log-in-paragraphy > p:first-child{
     margin-bottom: 0.25rem;
 }
-.log-in-paragraphy > p:nth-child(2){
-    text-indent: 2rem;
-    line-height: 1.5rem;
+.log-in-paragraphy > img{
+    position: absolute;
+    top: -60%;
+    left: -18%;
+
 }
-.log-in-paragraphy > p:nth-child(3){
-    text-align: right;
+/*左下*/
+
+.log-in-container-form{
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0 1.125rem 1.125rem 1.125rem;
+    margin-top: 2.8rem;
+    border: 1px solid #c9c9c9;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    background: url(../images/log_in_bg.png) repeat-x;
+}
+.log-in-container-form > a:first-of-type{
+    display: inline-block;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5625rem;
+    font-size: 1.315rem;
+    font-weight: lighter;
+    color: #fff;
+}
+.log-in-container-form > a:first-of-type:link,.log-in-container-form > a:first-of-type:visited,
+.log-in-container-form > a:first-of-type:hover,.log-in-container-form > a:first-of-type:active{
+    color: #fff;
+    text-decoration: none;
+}
+.log-in-search-input{
+    width: 100%;
+    height: 2.375rem;
+    border: 1px solid #c9c9c9;
+    line-height: 2.375rem;
+    border-radius: 0.25rem;
+    padding-left: 2.5rem;
+    margin: 1rem 0;
+    display: block;
+}
+.log-in-container-form  > div:nth-child(4) > .log-in-search-input{
+    width: 65%;
+    float: left;
+    margin-top: 0;
+}
+.check-img{
+    height: 2.125rem;
+    float: left;
+    width:27%;
+    background-color: rebeccapurple;
+    padding-left: 0.625rem;
+    position: relative;
+    left: 0.625rem;
+}
+.log-in-container-form > a:nth-of-type(2){
+    float: left;
+    color: #222;
+}
+.log-in-container-form > a:nth-of-type(3){
+    float: right;
+    color: #64167d;
+}
+.log-in-container-form  > div{
+    position: relative;
+}
+.log-in-container-form  > div > img{
+    position: absolute;
+    z-index: 999;
+    top: 0.438rem;
+    left: 0.438rem;
+}
+.log-in-container-form  > div:first-of-type > img{
+    top: 0.313rem;
 }
 
-
-
+/*按钮*/
+.btn-lg-orange{
+    width: 100%;
+    color: #fff;
+    background-color: #ffd9ad;
+    height: 2.8125rem;
+    border-radius: 0.625rem;
+    border: none;
+    margin: 0.3125rem 0 0.9375rem 0;
+    font-size: 1.0625rem;
+    font-weight: lighter;
+}
+.btn-lg-orange:focus{
+    background-color: #f59300;
+}
 
 
 
@@ -114,106 +211,53 @@ body {
 /*底部版权*/
 .buttom-img{
     position: absolute;
-    bottom: 9rem;
+    bottom: 7.875rem;
     width: 100%;
 }
 .copyright{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 9rem;
+    height: 7.875rem;
     background-color: #6d1c7e;
     display: block;
-    padding-top: 3rem;
+    padding-top: 2.8125rem;
 }
 .copyright-text{
     position: relative;
-    max-width: 60rem;
+    max-width: 1000px;
     margin: 0 auto;
+}
+.copyright a{
+    color: #fff!important;
+    text-decoration: none;
 }
 .copyright p{
     display: block;
     text-align: center;
-    font-size: 0.875rem;
-    color: #bbb;
-    padding-bottom: 0.75rem;
+    color: #fff;
+    opacity: 0.9;
+    padding-bottom: 0;
     text-transform: uppercase;
+    font-size: 0.875rem;
 }
-.copyright p:nth-child(2){
-    font-size: 0.75rem;
-}
-.log-in-question8{
-    position: relative;
-    z-index: 4;
-}
-.log-in-btn-group{
-    position: relative;
-    z-index: 4;
+
+.copyright-text > img{
+    position: absolute;
+    right: 0.625rem;
+    bottom: -0.125rem;
+    width: 10%;
+
 }
 
 
-/* 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-		Launch demo modal
-	  </button>
-	  
-	  <!-- Modal -->
-	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-			</div>
-			<div class="modal-body">
-			  ...
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			  <button type="button" class="btn btn-primary">Save changes</button>
-			</div>
-		  </div>
-		</div>
-	  </div> */
-
-
-/* .modal-header >button{
-
-}
-.modal-header > button > span{
-    content: "";
-    position: relative;
-    top: -50px;
-
-    border-radius: 15px;
-    color: #fff;
-    border: 2px solid #fff;
-    opacity: 1;
-
-
-}
-.modal-header > button > span::before{
-    content: "";
-    
-    position: relative;
-    top: -50px;
-    height: 12px;
-    width: 3px;
-    color: #fff;
-    border: 2px solid #fff;
-    opacity: 1;
-
-} */
-
-
-        
+     
 
 
 
         @media (max-width: 1025px){ 
             html{
-                font-size: 16px;
+                font-size: 12px;
             }
             .head>img{
                 width: 100%;
@@ -248,146 +292,32 @@ body {
                 font-size: 0.75em; 
                 color: #009BD9;
             }
-            /* .headLink{
-                max-width: 40rem;
-            }
-            .headLink > div{ 
-                width: 40rem;
-            }
-            .headLink > div> a > img{
-                height: 1.438rem;
-            }
-            .headLink > div> a:last-child > img{
-                margin-right: 1.438rem;
-            } */
-            .log-in-head{
-                max-width: 40rem;
-            }
-            .log-in-head > img{
-                width: 70%;
-            }
-            .log-in-paragraphy ~ div{
-                margin: 2rem;
-            }
-            .log-in-paragraphy{
-                padding: 1.25rem 2rem 0.9375rem 2rem;
-            }
+            /**/
             .log-in-paragraphy > img{
-                position: absolute;
-                top: -2rem;
-                left: -1rem;
-                height: 30%;
+                top: -30%;
+                left: -23%;
+                width: 50%;
             }
-            .log-in-container{
-                max-width: 1200px;
+            .log-in-container-form > a:first-of-type{
+                margin-top: 1.25rem;
             }
-            .log-in-radio-form{
-                margin-left: 0;
+            .log-in-container-form > div > img{
+                top: 0.38rem;
+                width: 10%;
             }
-            .log-in-radio-form > .radio{
-                margin-right: 4rem;
+            .log-in-container-form > div:first-of-type > img{
+                top: 0.2rem;
             }
-            .log-in-radio-form > .radio > label > input{
-                margin-right: 0.6rem;
-            }
-            .checkbox-custom > #cb1_8 ~ p,
-            .checkbox-custom > #cb2_5 ~ p,
-            .checkbox-custom > #cb3_14 ~ p{
-                top: 1.2rem;
-            }
-            .copyright-text{
-                max-width: 50rem;
-            }
-            
-        }
-
-        /* @media (max-width: 767px) { 
-            html{
-                font-size: 12px;
-                overflow-x: hidden;
-            }
-            .head > img{
-                width: 150%;
-                position: relative;
-                left: -25%;
-                z-index: -1;
-            }
-            .headLink{
-                max-width: 28rem;
-            }
-            .headLink i{
-                display: none;
-            }
-            .headLink > div{ 
-                width: 28rem;
-                top: 0.625rem;
-            }
-            .headLink > div> a > img{
-                height: 1.5rem;
-            }
-            .log-in-head{
-                max-width: 30rem;
-                padding: 0;
-                padding-bottom: 0.1rem;
-            }
-            .log-in-head > img{
-                width: 70%;
-                position: relative;
-                top: 0.3rem;
-            }
-            .log-in-head p{
-                top: 2.4rem;
-            }
-            .log-in-container{
-                max-width: 30rem;
-                padding: 1.125rem 1.063rem 1.063rem 1.063rem;
-            }
-            .log-in-paragraphy{
-                padding: 1.125rem 1.063rem 1.063rem 1.063rem;
-            }
-            .log-in-paragraphy > img{
-                position: absolute;
-                top: -1.75rem;
-                left: -0.875rem;
-                height: 22%;
-            }
-            .log-in-paragraphy ~ div,{
-                margin: 1.5rem 0;
-            }
-            .reservation-seccess-paragraphy ~ div{
-                margin: 1.5rem 0 0 0;
-            }
-            .log-in-paragraphy ~ div:last-child{
-                margin-bottom: 13rem;
-            }
-            .checkbox-custom > #cb1_8 ~ p,
-            .checkbox-custom > #cb2_5 ~ p,
-            .checkbox-custom > #cb3_14 ~ p{
-                top: 1.375rem;
-            }
-            .btn-gray, .btn-orange{
-                width: 9rem;
-                height: 2rem;
-            }
-            .btn{
-                padding: 0;
-            }
-            .copyright{
-                padding-top: 2rem;
+            .log-in-container-right > img{
+                padding-top: 5.1rem;
+                width: 100%;
             }
             .copyright p{
-                padding-bottom: 0;
-            }
-            .copyright-text{
-                max-width: 30rem;
+                font-size: 1rem;
+                transform: scale(0.9);
             }
 
-
-            .reservation-seccess-img > img{
-                top: 4rem;
-                height: 6rem;
-            }
-        } */
-        
+            
+        }
 
         
