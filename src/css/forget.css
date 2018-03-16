@@ -1,0 +1,260 @@
+html{
+    font-size: 16px;
+}
+body {
+    margin:0;
+    padding: 0;
+    font-family: Microsoft YaHei; 
+    background: url(../images/body_bg.png);
+    background-size: contain;
+    position: relative;
+    outline: none;
+}
+*{
+    outline: none;
+}
+.row{
+    margin:0;
+    padding: 0;
+}
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,
+.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,
+.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
+    padding:0;
+}
+a:link,a:visited,a:hover,a:visited{
+    text-decoration: none;
+}
+input::-ms-input-placeholder{color: #999;}
+input::-webkit-input-placeholder{color: #999;}
+input{color: #333;}
+
+.form-control:focus{
+    border-color: #c9c9c9;
+    box-shadow: none;
+}
+
+/*顶部图片*/
+
+.headLink{
+    position: relative;
+    width:1200px;
+    margin: 0 auto;
+}
+.headLink>div{ 
+    width:1200px;
+    position: fixed;
+    top:5px;
+}
+.headLink>div>:nth-child(1){
+    float: left;
+
+}
+.headLink>div>:nth-child(2){
+    float: right;
+}
+.headLink>div>:nth-child(2)>:nth-child(1){
+    margin-right: 15px;
+}
+.headLink>div>:nth-child(2)>:nth-child(2){
+    margin-right: 15px;
+    text-decoration: none;
+}
+.user-content{
+    font-size: 12px; 
+    color: #009BD9;
+}
+
+/*内容，布局*/
+.forget-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.325rem;
+    padding: 0 0 2.25rem 3.25rem;
+    color: #6d1c7e;
+    overflow: hidden;
+    padding-bottom: 23.75rem;
+}
+
+
+
+/* */
+.forget-paragraphy{
+    position: relative;
+    background-color: #fef7fc;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.5rem 1.25rem 2.75rem;
+    margin-top: 5rem;
+    width: 90%;
+}
+.forget-paragraphy > p{
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+.forget-paragraphy > img{
+    position: absolute;
+    top: -75%;
+    width: 12%;
+    left: -4%;
+
+}
+/**/
+.forget-container-form{
+    max-width: 94%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 1.125rem 1.125rem 1.125rem;
+    margin-top: 0.9375rem;
+    padding-bottom: 2.5rem;
+    margin-top: 1.875rem;
+}
+.forget-container-form > label,
+.forget-container-form > input,
+.forget-container-form > button{
+    float: left;
+    line-height: 2.375rem;
+}
+.forget-container-form > label{
+    padding-right: 1.25rem;
+    color: #333;
+}
+.forget-search-input{
+    height: 2.375rem;
+    border: 1px solid #c9c9c9;
+    line-height: 2.375rem;
+    border-radius: 0.25rem;
+    padding-left: 0.625rem;
+    margin-bottom: 7%;
+    display: block;
+    width: 36%;
+    margin-right: 1.5625rem;
+    margin-top: 0.1875rem;
+}
+/*按钮*/
+.btn-lg-orange{
+    color: #fff;
+    background-color: #ffd9ad;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+    border: none;
+    font-size: 1.0625rem;
+    font-weight: lighter;
+    width: 8.125rem;
+    height: 2.75rem;
+}
+.btn-lg-orange:focus{
+    background-color: #f59300;
+}
+
+
+
+
+ 
+/*底部版权*/
+.buttom-img{
+    position: absolute;
+    bottom: 7.875rem;
+    width: 100%;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.875rem;
+    background-color: #6d1c7e;
+    display: block;
+    padding-top: 2.8125rem;
+}
+.copyright-text{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.copyright a{
+    color: #fff!important;
+    text-decoration: none;
+}
+.copyright p{
+    display: block;
+    text-align: center;
+    color: #fff;
+    opacity: 0.9;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.copyright-text > img{
+    position: absolute;
+    right: 0.625rem;
+    bottom: -0.125rem;
+    width: 10%;
+
+}
+
+
+     
+
+
+
+        @media (max-width: 1025px){ 
+            html{
+                font-size: 12px;
+            }
+            .head>img{
+                width: 100%;
+            }
+            .headLink{
+                position: relative;
+                width:100%;
+            }
+            .headLink>div{ 
+                width :100%;    
+                position: fixed;
+                top:5px;
+            }
+            .headLink>div>:nth-child(1){
+                float: left;
+                width:25%;
+                margin-left: 14px;
+            }
+            .headLink>div>:nth-child(2){
+                float: right;
+                width:200px;
+                text-align: end;
+            }
+            .headLink>div>:nth-child(2)>:nth-child(1){
+                margin-right: 14px;
+            }
+            .headLink>div>:nth-child(2)>:nth-child(2){
+                margin-right:14px;
+                text-decoration: none;
+            }
+            .user-content{
+                font-size: 0.75em; 
+                color: #009BD9;
+            }
+            /**/
+            .forget-paragraphy{
+                width: 97%;
+            }
+            .forget-paragraphy > img{
+                top: -90%;
+                left: -7%;
+                width: 18%;
+            }
+            .forget-container-form{
+                margin-top: 4rem;
+            }
+            .copyright p{
+                font-size: 1rem;
+                transform: scale(0.9);
+            }
+
+            
+        }
+
+        
