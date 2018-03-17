@@ -404,7 +404,7 @@ input{color: #333;}
 }
 .address
 {
-    width: 65% !important;
+    width: 75% !important;
     position: relative;
 }
 .detailsAddress{
@@ -523,7 +523,7 @@ input{color: #333;}
             width: 100px;
             position: absolute;
             left: -40px;
-            top: 20px;
+            top: 0px;
         }
         .contentHead{
             font-size: 1.25rem;
@@ -540,6 +540,12 @@ input{color: #333;}
         .button,
         .content,
         .head>div
+        {
+            width: 95%;
+        }
+        .contentHead,
+        .contentGreat,
+        .contentForm
         {
             width: 95%;
         }
