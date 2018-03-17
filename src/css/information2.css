@@ -290,6 +290,8 @@ input{color: #333;}
   line-height: 30px; 
   padding: 0 5px;    
   color:#333; 
+  font-size: 1.3rem;
+  background-color: #fff;
 }
 .detialConditionDataInput>input[placeholder],
 .detialConditionDataInputHP>:nth-child(2)>div>input[placeholder],
@@ -305,8 +307,6 @@ input{color: #333;}
 }
 .detialConditionDataInputHP>:nth-child(2){
   width: 65%;
-  height: 30px;
-  color:#999; 
 }
 .detialConditionDataInputHP>:nth-child(2)>div{
   display: inline-block;
@@ -573,6 +573,29 @@ input{color: #333;}
     .check-img {
         right: 50px;
     }
+    
+    .iDate > input{
+        background: url(../images/icon_cal_02.png) no-repeat right 10px center;
+        background-size: 6%;
+    }
+    /* .select_style select:before{
+        position: absolute;
+        right: 13px;
+        top: 18px;
+        width: 0;
+        height: 0;
+        content: "";
+        border-width: 8px 8px 0 8px;
+        border-style: solid;
+        border-color: #d36969 transparent;
+        -webkit-transition: transform .25s;
+        -moz-transition: transform .25s;
+        -ms-transition: transform .25s;
+        -o-transition: transform .25s;
+        transition: transform .25s;
+
+    } */
+    
    
     @media (max-width: 1025px){ 
         html{

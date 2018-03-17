@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="./css/datepicker.min.css">
-    <link href="./css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
-    <link href="./css/mobileSelect.css" rel="stylesheet" type="text/css" />
-
+    <!-- <link href="./css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="./css/mobileSelect.css" rel="stylesheet" type="text/css" /> -->
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <link href="./css/information2.css" rel="stylesheet" type="text/css" />
-    <link href="./css/datetimeandselect.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./css/datetimeandselect.css" rel="stylesheet" type="text/css" /> -->
 
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.min.js"></script>
@@ -104,8 +104,7 @@
                             <span>預產期</span>
                         </span>
                         <div class="iDate date">
-                            <input type="text" placeholder="yyyy-mm-dd" id="trigger_info2_0">
-                            <button type="button" class="addOn"></button>
+                            <input type="text" class="search-input" placeholder="yyyy-mm-dd" value="" id="trigger_info2_0">
                         </div>
                     </div>
                 </div>
@@ -116,20 +115,29 @@
                             <span class="color">*</span>
                             <span>胎次</span>
                         </span>
-                        <div id="trigger_info2_1" class="select"></div>
+                        <select type="text" name="lname" id="trigger_info2_1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
                     </div>
                 </div>
 
                 <div>
-                    <div class="detialConditionDataInputHP addressContent">
+                    <div class="detialConditionDataInput detialConditionDataInputHP addressContent select_style">
                         <span>
                             <span class="color">*</span>
                             <span> 生產醫院</span>
                         </span>
-                        <span class="address">
-                            <div class="select" id="trigger_info2_2"></div>
-                            <div class="select" id="trigger_info2_3"></div>
-                        </span>
+                        <select type="text" name="lname" id="trigger_info2_2">
+                            <option value="taibei">台北市</option>
+                            <option value="other">其他</option>
+                        </select>
+                        <select type="text" name="lname" id="trigger_info2_3"> 
+                            <option value="rmyy">人民医院</option>
+                            <option value="other">其他</option>
+                        </select>
                     </div>
                 </div>
 
@@ -165,17 +173,27 @@
                 </div>
 
                 <div>
-                    <div class="detialConditionDataInput">
+                    <div class="detialConditionDataInput select_style">
                         <span>
                             <span> 親子關系</span>
                         </span>
-                        <div id="trigger_info2_6" class="select"></div>
+                        <select type="text" name="lname" id="trigger_info2_6">
+                            <option value="munv">母女</option>
+                            <option value="muzi">母子</option>
+                            <option value="fumv">父女</option>
+                            <option value="fuzi">父子</option>
+                        </select>
                     </div>
-                    <div class="detialConditionDataInput">
+                    <div class="detialConditionDataInput select_style">
                         <span>
                             <span> 親子關系</span>
                         </span>
-                        <div id="trigger_info2_7" class="select"></div>
+                        <select type="text" name="lname" id="trigger_info2_7">
+                            <option value="munv">母女</option>
+                            <option value="muzi">母子</option>
+                            <option value="fumv">父女</option>
+                            <option value="fuzi">父子</option>
+                        </select>
                     </div>
                 </div>
 
@@ -185,8 +203,7 @@
                             <span> 寶寶生日</span>
                         </span>
                         <div class="iDate date">
-                            <input type="text" placeholder="請選擇" id="trigger_info2_8">
-                            <button type="button" class="addOn"></button>
+                            <input type="text" class="search-input" placeholder="請選擇" value="" id="trigger_info2_8">
                         </div>
                     </div>
                     <div class="detialConditionDataInput">
@@ -194,8 +211,7 @@
                             <span> 寶寶生日</span>
                         </span>
                         <div class="iDate date">
-                            <input type="text" placeholder="請選擇" id="trigger_info2_9">
-                            <button type="button" class="addOn"></button>
+                            <input type="text" class="search-input" placeholder="請選擇" value="" id="trigger_info2_9">
                         </div>
                     </div>
                 </div>
@@ -212,11 +228,16 @@
                 </div>
 
                 <div>
-                    <div class="detialConditionDataInput">
+                    <div class="detialConditionDataInput select_style">
                         <span>
                             <span> 親子關系</span>
                         </span>
-                        <div id="trigger_info2_11" class="select"></div>
+                        <select type="text" name="lname" id="trigger_info2_11">
+                            <option value="munv">母女</option>
+                            <option value="muzi">母子</option>
+                            <option value="fumv">父女</option>
+                            <option value="fuzi">父子</option>
+                        </select>
                     </div>
                 </div>
 
@@ -226,8 +247,7 @@
                             <span> 寶寶生日</span>
                         </span>
                         <div class="iDate date">
-                            <input type="text" placeholder="請選擇" id="trigger_info2_12">
-                            <button type="button" class="addOn"></button>
+                            <input type="text" class="search-input" placeholder="請選擇" value="" id="trigger_info2_12">
                         </div>
                     </div>
                 </div>
@@ -269,9 +289,11 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/datepicker.js"></script>
     <script src="./js/datepicker.zh-TW.js"></script>
-    <script type="text/javascript" src="./js/moment.js"></script>
+
+    <script src="./js/index_1.js"></script>
+    <!-- <script type="text/javascript" src="./js/moment.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datetimepicker.js"></script>
-    <script type="text/javascript" src="./js/mobileSelect.min.js"></script>
+    <script type="text/javascript" src="./js/mobileSelect.min.js"></script> -->
     <script src="./js/information.js"></script>
 
 </body>
