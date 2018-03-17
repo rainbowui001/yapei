@@ -1,0 +1,40 @@
+
+body
+{
+    font-family: Microsoft YaHei;
+    background: url(../images/body_bg.png);
+    background-size: contain;
+}
+
+.informationTotal{
+    position: relative;
+    overflow: hidden;
+}
+.buttom-img{
+    position: absolute !important;
+   
+}
+.copyright{
+    position: absolute !important;
+  
+}
+.content{
+    padding-bottom: 20rem;
+}
+.buttom-img {
+    position: absolute;
+    width: 100%;
+}
+.total{
+    width: 1200px;
+    margin: -10px auto 0 auto;
+    height: 300px;
+    background-color: #fff;
+}
+@media (max-width: 1025px){ 
+    .total{
+        width: 95%;
+        margin: -15px auto 0 auto;
+        background-color: #fff;
+    }
+}
