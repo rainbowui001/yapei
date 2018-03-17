@@ -199,6 +199,7 @@ input{color: #333;}
 
 
 
+
  
 /*底部版权*/
 .buttom-img{
@@ -256,22 +257,20 @@ input{color: #333;}
             }
             /**/
             .log-in-paragraphy > img{
-                top: -30%;
-                left: -23%;
-                width: 50%;
+                left: -17%;
+                width: 38%;
             }
             .log-in-container-form > a:first-of-type{
                 margin-top: 1.25rem;
             }
             .log-in-container-form > div > img{
                 top: 0.38rem;
-                width: 10%;
             }
             .log-in-container-form > div:first-of-type > img{
                 top: 0.2rem;
             }
             .log-in-container-right > img{
-                width: 100%;
+                width: 83%;
             }
             .copyright p{
                 font-size: 1rem;

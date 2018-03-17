@@ -110,7 +110,7 @@ input{color: #333;}
 .contentGreat>:nth-child(1)>img{
     width: 90px;
     position: absolute;
-    left: -70px;
+    left: -40px;
 }
 .loginFont{
     width: 100%;
@@ -571,7 +571,7 @@ input{color: #333;}
         margin: 30px auto;
     }
     .check-img {
-        right: 80px;
+        right: 50px;
     }
    
     @media (max-width: 1025px){ 
@@ -598,7 +598,6 @@ input{color: #333;}
             width: 100px;
             position: absolute;
             left: -40px;
-            top: 20px;
         }
         .contentHead{
             font-size: 1.25rem;
@@ -619,9 +618,15 @@ input{color: #333;}
             width: 80%;
         }
         #trigger_info2_13{
-            width: 25%!important;
+            width: 38%!important;
         }
         .check-img {
-            right: 0;
+            right: 25px;
+        }
+    }
+
+    @media (max-width: 768px){ 
+        .contentForm{
+            width: 95%!important;
         }
     }
