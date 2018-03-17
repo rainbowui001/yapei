@@ -284,6 +284,7 @@ input{color: #333;}
   padding: 0 5px;    
   color:#333; 
   font-size: 1.3rem;
+  background-color: #fff;
 }
 .detialConditionDataInput>input[placeholder],
 .detialConditionDataInput>select[placeholder],
@@ -435,6 +436,7 @@ input{color: #333;}
     line-height: 30px; 
     padding: 0 5px;    
     color:#333; 
+    background-color: #fff;
 }
 
 .detailsAddress{
