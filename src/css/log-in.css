@@ -45,7 +45,7 @@ input{color: #333;}
     background-color:#fff;
 }
 .head>div{
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -60,7 +60,7 @@ input{color: #333;}
 
 /*内容，布局*/
 .log-in-container{
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 0.325rem;
@@ -250,6 +250,9 @@ input{color: #333;}
         @media (max-width: 1025px){ 
             html{
                 font-size: 12px;
+            }
+            .log-in-container,.head>div{
+                width: 95%;
             }
             /**/
             .log-in-paragraphy > img{

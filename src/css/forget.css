@@ -44,7 +44,7 @@ input{color: #333;}
     background-color:#fff;
 }
 .head>div{
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -59,7 +59,7 @@ input{color: #333;}
 
 /*内容，布局*/
 .forget-container{
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 0.325rem;
@@ -195,6 +195,10 @@ input{color: #333;}
             html{
                 font-size: 12px;
             }
+            .forget-container , .head>div{
+                width: 95%;
+            }
+
             /**/
             .forget-paragraphy{
                 width: 97%;

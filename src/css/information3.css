@@ -21,7 +21,7 @@ a:link,a:visited,a:hover,a:visited{
     background-color:#fff;
 }
 .head>div{
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -38,11 +38,11 @@ a:link,a:visited,a:hover,a:visited{
 
 .content{
     height: 100%;
-    width: 80%;
+    width: 1200px;
     margin: 10px auto;
     background-color: #fff;
     border-radius: 5px;
-    padding-bottom: 350px;
+    padding-bottom: 44.5rem;
 }
 .contentHead{
     padding: 50px 0 0 0;
@@ -116,7 +116,7 @@ a:link,a:visited,a:hover,a:visited{
 }
 
 .button{
-    width: 80%;
+    width: 1200px;
     margin: 20px auto;
     text-align: center;
  
@@ -201,4 +201,10 @@ a:link,a:visited,a:hover,a:visited{
     .contentHead>div>div{
         margin-right: 20px;
     }
+    .button,
+    .content,
+    .head>div
+        {
+            width: 95%;
+        }
 }

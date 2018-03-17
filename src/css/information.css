@@ -21,7 +21,7 @@ input{color: #333;}
     background-color:#fff;
 }
 .head>div{
-    width: 80%;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -37,7 +37,7 @@ input{color: #333;}
 /* content */
 
 .content{
-    width: 80%;
+    width: 1200px;
     margin: 10px auto;
     background-color: #fff;
     border-radius: 5px;
@@ -418,7 +418,7 @@ input{color: #333;}
     width: 25%;
 }
 .button{
-    width: 80%;
+    width: 1200px;
     margin: 20px auto;
     text-align: center;
  
@@ -525,13 +525,19 @@ input{color: #333;}
             font-size: 1.25rem;
         }
         .contentHead>div{
-            width: 80%;
+            width: 100%;
         }
         .contentHead>div>div{
             margin-right: 20px;
         }
         .detialConditionDataInput>span, .detialConditionDataInputHP>:nth-child(1){
             width: 84px;
+        }
+        .button,
+        .content,
+        .head>div
+        {
+            width: 95%;
         }
         /* .addressContent > span{
             width: 90px!important;
