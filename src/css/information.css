@@ -265,7 +265,8 @@ input{color: #333;}
     margin-bottom: 25px;
 }
 .detialConditionDataInput>span,
-.detialConditionDataInputHP>:nth-child(1)
+.detialConditionDataInputHP>:nth-child(1),
+.addressContent>:nth-child(1)
 {
     display: inline-block;
     width: 90px;
@@ -282,8 +283,10 @@ input{color: #333;}
   line-height: 30px; 
   padding: 0 5px;    
   color:#333; 
+  font-size: 1.3rem;
 }
 .detialConditionDataInput>input[placeholder],
+.detialConditionDataInput>select[placeholder],
 .detialConditionDataInputHP>:nth-child(2)>div>input[placeholder],
 .detialConditionDataInput>div>input[placeholder],
 .phone1[placeholder]
@@ -372,7 +375,6 @@ input{color: #333;}
 }
 .other>:nth-child(1){
     display: inline-block;
-    width: 90px;
     text-align: end;
     margin-right: 10px;
 }
@@ -399,14 +401,42 @@ input{color: #333;}
 }
 
 .addressContent{
-    display: inline-block;
-    width: 65%;
+    display: flex;
+    width: 97%;
+    margin:13px  auto  10px auto;
+    font-size:1.3em; 
+    height: 30px;
+    line-height: 30px; 
 }
+.addressContent>:nth-child(1) {
+    width: 90px;
+    display: inline-block;
+    text-align: end;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
 .address
 {
-    width: 75% !important;
+    width: 75%;
     position: relative;
 }
+.address>:nth-child(1){
+    width: 20%;
+}
+.address>:nth-child(2){
+    margin: 0 5px;
+    width: 20%;
+}
+.address>select{
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px; 
+    padding: 0 5px;    
+    color:#333; 
+}
+
 .detailsAddress{
     border: 1px solid #c9c9c9;
     border-radius: 3px;
@@ -549,7 +579,9 @@ input{color: #333;}
         {
             width: 95%;
         }
-        /* .addressContent > span{
-            width: 90px!important;
-        } */
+        
+        .address{
+            width: 95%;
+        }
+      
     }
