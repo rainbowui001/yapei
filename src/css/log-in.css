@@ -67,7 +67,7 @@ input{color: #333;}
     padding: 0 0 2.25rem 2.25rem;
     color: #6d1c7e;
     overflow: hidden;
-    padding-bottom: 23.75rem;
+    padding-bottom: 24.75rem;
     margin-top: 10px;
 }
 
@@ -175,6 +175,7 @@ input{color: #333;}
     z-index: 999;
     top: 0.438rem;
     left: 0.438rem;
+    width: 1.8rem;
 }
 .log-in-container-form  > div:first-of-type > img{
     top: 0.313rem;
