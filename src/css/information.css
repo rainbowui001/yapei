@@ -397,8 +397,10 @@ input{color: #333;}
 .phoneLogin1{
     width: 20%;
 }
+
 .addressContent{
-    width: 100%;
+    display: inline-block;
+    width: 65%;
 }
 .address
 {
@@ -499,6 +501,8 @@ input{color: #333;}
         position: relative;
         z-index: 4;
     }
+
+   
 
    
     @media (max-width: 1025px){ 
