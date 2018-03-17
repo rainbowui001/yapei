@@ -573,6 +573,11 @@ input{color: #333;}
     .check-img {
         right: 50px;
     }
+    
+    .iDate > input{
+        background: url(../images/icon_cal_02.png) no-repeat right 10px center;
+        background-size: 6%;
+    }
    
     @media (max-width: 1025px){ 
         html{
