@@ -131,6 +131,7 @@ body{
     }
     .indexData>:nth-child(1)>img{
         float: right;
+        width: 65%;
     }
     .indexData>:nth-child(2){
         float: left;
@@ -224,7 +225,7 @@ body{
     }
 
     .indexCondition{
-        margin: 40px auto 0 auto;
+        margin: 30px auto 0 auto;
         max-width:64em;
         border-top-left-radius: 5.2px;
         border-top-right-radius: 5.2px;
@@ -447,6 +448,7 @@ body{
 }
 
 @media screen and (min-width: 1025px) {
+
     body{
         font-family: Microsoft YaHei;
         background: url(../images/body_bg.png);
@@ -560,7 +562,7 @@ body{
     }
     .indexData>:nth-child(1)>img{
         float: right;
-        width:75%;
+        width:65%;
     }
     .indexData>:nth-child(2){
         float: left;
@@ -658,7 +660,7 @@ body{
     }
   
     .indexCondition{
-        margin: 50px auto 0 auto;
+        margin: 30px auto 0 auto;
         width: 1200px;
         border-top-left-radius: 5.2px;
         border-top-right-radius: 5.2px;
@@ -748,7 +750,7 @@ body{
         line-height: 30px;
     }
     .indexConditionOneContentMessage>div>span{
-       font-size:18px;
+       font-size:16px;
      }
     .indexConditionOneContentMessage>div>img{
         width: 3%;
