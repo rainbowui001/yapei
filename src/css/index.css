@@ -885,6 +885,16 @@ body{
     }
 
 
+    .fixed-top{
+        position: fixed;
+        width: 100%;
+        z-index: 999999;
+    }
+
+    .fixed-top > div{
+        background-color: #ffffff;
+    }
+    
 
 
 
