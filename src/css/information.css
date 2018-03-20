@@ -109,8 +109,8 @@ input{color: #333;}
     width: 100%;
     background-color: #fef7fc;
     border-radius: 4px 4px 0 0;
-    font-size: 0.75rem;
-    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
 }
 .loginFontContent{
     text-indent:2em;
@@ -501,7 +501,7 @@ input{color: #333;}
     opacity: 0.9;
     padding-bottom: 0;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 .copyright-text > img{

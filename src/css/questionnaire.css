@@ -196,12 +196,12 @@ body {
     .checkbox-custom input[type="checkbox"]:checked +label:after {
         position: absolute;
         display: inline-block;
-        font-family: 'FontAwesome';
-        content: '\F00C';
-        top: 50%;
+        font-family: 'Glyphicons Halflings';
+        content: '\e013';
+        top: 53%;
         left: 1.313rem;
         margin-top: -0.5rem;
-        font-size: 0.938rem;
+        font-size: 0.8rem;
         line-height: 1;
     }
     .checkbox-custom label {
